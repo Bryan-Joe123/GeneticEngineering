@@ -1,0 +1,95 @@
+/* Front Page */
+body{
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    border:0;
+    background-image: url("../Assets/background.jpg");
+    background-position: center;
+    background-size: 100%;
+    animation-name: background-bs;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+#front-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 93vh;
+    
+}
+
+@keyframes background-bs{
+    0% {background-size: 100%;}
+    50% {background-size: 120%;}
+    100% {background-size: 100%;}
+}
+
+#front-title-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+
+#front-title-container>h1{
+    font-size:5vw;
+    color: var(--text);
+    font-family: Helvetica, sans-serif;
+    text-decoration: underline;
+    text-decoration-color: var(--contrast);
+}
+
+#front-title-container>h3{
+    font-size:3vw;
+    color: var(--text);
+    font-family: Helvetica, sans-serif;
+}
+
+#front-title-container>p{
+    font-size:1vw;
+    margin-top: 20px;
+    color: var(--light-text);
+}
+
+#front-container>h5{
+    font-size:1.2vw;
+    color: var(--text);
+    margin-bottom:20px;
+    transition: font-size 1s;
+    transform: rotate(90deg);
+    animation-name: hover;
+    animation-timing-function: linear;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+}
+
+#front-container>h5:hover{
+    font-size:1.7vw;
+}
+
+@keyframes hover{
+    0% {transform: translateY(0px) rotate(90deg);}
+    25% {transform: translateY(5px) rotate(90deg);}
+    50% {transform: translateY(0px) rotate(90deg);}
+    75% {transform: translateY(-5px) rotate(90deg);}
+    100% {transform: translateY(0px) rotate(90deg);}
+}
+
+#front-more-button{
+    background-color: transparent;
+    border: solid var(--text);
+    border-width: 1px;
+    color: var(--text);
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: border-width 0.1s;
+}
+
+#front-more-button:hover{
+    background-color: var(--transparent);
+    border-width: 2px;
+}

@@ -1,0 +1,71 @@
+:root{
+    --light-text:#dce0e4;
+    --text:#eff2f5;
+    --transparent: #00000079;
+    --darker:#0d1013;
+    --dark:#12161a;
+    --med:#1a2128;
+    --contrast:#fff158;
+}
+
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin:0;
+    padding:0;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+#header-container{
+    display: flex;
+    align-items: stretch;
+
+    justify-content: space-between;
+
+    /* background-color: var(--transparent); */
+
+    width: 100%;
+    height: 7vh;
+}
+
+#header-button-container{
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+}
+
+.header-buttons{
+    width: 8vw;
+    text-align: center;
+    color: var(--text);
+    background-color: transparent;
+    border: none;
+}
+
+.header-buttons {
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    color:var(--text);
+    font-size: 1vw;
+}
+
+.header-buttons::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--text);
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+}
+
+.header-buttons:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
+
