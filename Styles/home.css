@@ -129,6 +129,11 @@ body{
     text-align: center;
 }
 
+.content-seperator>h3{
+    color: var(--light-text);
+    font-size: 2vw;
+}
+
 .content-seperator>p{
     color: var(--contrast);
     padding: 20px 90px;
