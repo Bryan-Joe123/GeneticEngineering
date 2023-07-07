@@ -5,28 +5,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Styles/common.css">
     <link rel="stylesheet" href="../Styles/home.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Home</title>
 </head>
 <body>
     <div id="header-container">
-        <div>side</div>
+        <img src="../Assets/Logo.png" alt="Logo" width="70vw" height="70vw">
         Logo
         <div id="header-button-container">
             <button class="header-buttons">Home</button>
-            <button class="header-buttons">More</button>
-            <button class="header-buttons">About</button>
-            <button class="header-buttons">Contact</button>
+            <button class="header-buttons" onclick="window.location = './more.html'">More</button>
+            <button class="header-buttons" onclick="window.location = './about.html'">About</button>
+            <button class="header-buttons" onclick="window.location = './contact.html'">Contact</button>
         </div>
     </div>
-    <div id="front-container">
-        <div></div>
-        <div id="front-title-container">
+    <div id="cover">
+        <div id="front-container">
+            <div></div>
+            <div id="front-title-container">
+                <h1>Genetic Engineering</h1>
+                <h3>in Health care</h3>
+                <p>The <b>future</b> of <b>health care</b> and <b>gene modification</b> is Here</p>
+                <button id="front-more-button">Learn More</button>
+            </div>
+            <h5>➤</h5>
+        </div>
+    </div>
+    <hr>
+    <div class="screen-container">
+        <div class="content-seperator">
             <h1>Genetic Engineering</h1>
-            <h3>in Health care</h3>
-            <p>The <b>future</b> of <b>health care</b> and <b>gene modification</b> is Here</p>
-            <button id="front-more-button">Learn More</button>
+            <p>
+                <!-- Genetic engineering is a field of biotechnology that involves manipulating the 
+                genetic material <span class="white">(DNA)</span> of organisms to alter their traits or characteristics. 
+                It allows scientists to introduce or modify specific genes in an organism's genome, 
+                leading to changes in its <span class="white">phenotype</span> (observable traits) or function. This process can 
+                have applications in various areas, including agriculture, medicine, and industry, with 
+                the aim of improving crop yields, developing <span class="white">new treatments for diseases</span>, or creating 
+                novel biological products. -->
+
+                The artificial <span class="white">manipulation</span>, <span class="white">modification</span>, and <span class="white">recombination</span> of <span class="white">DNA</span> or other nucleic acid
+                molecules in order to modify an organism or population of organisms. The term <span class="white">genetic engineering</span> 
+                is generally used to refer to methods of recombinant <span class="white">DNA</span> technology, which
+                emerged from basic research in microbial genetics. <br><br> The techniques employed in genetic 
+                engineering have led to the production of medically important products, including 
+                <span class="white">human insulin</span>, <span class="white">human growth hormone</span>, and <span class="white">hepatitis B vaccine</span>, as well as to the development
+                of genetically modified organisms such as <span class="white">disease-resistant plants</span>.
+            </p>
         </div>
-        <h5>➤</h5>
+        <div class="content-seperator" style="display:flex; justify-content: center; align-items: center;">
+            <img src="../Assets/DNAs.png" alt="dna" class="image">
+        </div>
     </div>
+    <!-- <hr> -->
+    <div class="screen-container">
+        
+        <div class="content-seperator" style="display:flex; justify-content: center; align-items: center;">
+            <span style="color: var(--contrast);font-size: 20vh;font-family: fantasy;">1.2B+</span>            
+        </div>
+        <div class="content-seperator">
+            <h1>How will it affect <br>Health Care</h1>
+            <p>
+                It will be a new revolution in the health industry, new cures and <span class="white">personalized medicine</span>
+                will be available. It will play major role in treating <span class="white">cancer</span>. It will be able to save
+                a <span class="white">BILLION</span> people from various deceases and can reduce ageing drastically. <br><br>
+
+                Gene therapy is a promising field that uses <span class="white">genetic engineering</span> techniques to 
+                introduce or <span class="white">modify genes</span> in a person's cells. It holds potential for treating 
+                genetic disorders by replacing or correcting faulty genes.
+            </p>
+        </div>
+    </div>
+    <!-- <hr> -->
+    <div class="screen-container">
+        <div class="content-seperator">
+            <h1>Disease caused by Genetics </h1>
+            <p>
+                Nearly <span class="white">40 percent</span> of the diseases in the study (225 of 560) 
+                had a <span class="white">genetic component</span>, while 25 percent (138) were driven at least in part by 
+                factors stemming from sharing the same household, social influences, and the like.<br><br> 
+                <span class="white">Cognitive disorders</span> demonstrated the greatest degree of 
+                heritability — <span class="white">four out of five diseases </span> showed a genetic 
+                component — while <span class="white">connective tissue</span> diseases had the 
+                lowest degree of genetic influence.
+            </p>
+        </div>
+        <div class="content-seperator" style="display:flex; justify-content: center; align-items: center;">
+            <div class="container chart" data-size="300" data-value="40" data-arrow="up"></div>
+        </div>
+    </div>
+    <!-- <hr> -->
+    <div class="screen-container">
+        
+        <div class="content-seperator" style="display:flex; justify-content: center; align-items: center;">
+            <canvas id="cost-chart"></canvas>            
+        </div>
+        <div class="content-seperator">
+            <h1>Genome Sequencing <br></h1>
+            <p>
+                A <span class="white">laboratory</span> method that is used to determine the entire <span class="white">genetic makeup</span> of a specific 
+                <span class="white">organism</span> or cell type. This method can be used to find changes in areas of the genome. 
+                These changes may help <span class="white">scientists</span> understand how specific <span class="white">diseases</span>, such as cancer, form.
+                <br><br>
+                It's price has been steadily <span class="white">decreasing</span> for the past few decades. It used to take a
+                <span class="white">1,000,000$ and 3 years</span> to sequence the genome of an organism during the 2000s but
+                now, new technology enable us to sequence the genome of an organism in less than <b><span class="white" style="font-size: 1.3vw;">600$ and 2 weeks</span></b>.
+            </p>
+        </div>
+    </div>
+    <!-- <hr> -->
+    <div class="screen-container">
+        <div class="content-seperator">
+            <h1>CRISPR <br>The new revolution</h1>
+            <p>
+                The <span class="white">CRISPR-Cas9</span> system has generated a lot of excitement in the scientific community 
+                because it is <span class="white">faster, cheaper, more accurate</span>, and more <span class="white">efficient</span> than other genome 
+                editing methods
+                <br><br>
+                Its a new technology that enables gene editing to be available in a really <span class="white">cheaper</span> price
+                compared to the traditional methods
+            </p>
+            <button class="learnmore-button">Learn More</button>
+        </div>
+        <div class="content-seperator" style="display:flex; justify-content: center; align-items: center;">
+            <span style="color: var(--contrast);font-size: 20vh;font-family: fantasy;">1.2B+</span>            
+        </div>
+        
+    </div>
+    <script src="../Scripts/donut-chart.js"></script>
+    <script>
+        const ctx = document.getElementById('cost-chart');
+      
+        new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: ["2007","2010","2014","Now"],
+            datasets: [{
+                label: 'Cost in $',
+                data: [1000000, 100000, 1000, 600],
+                borderWidth: 1,
+                backgroundColor: '#ffea0011',
+                borderColor:'#ffea00',
+                color:'#ffea00'
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            },
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Cost of Genome Sequencing'
+                }
+            },
+          },
+        });
+      </script>
 </body>
 </html>

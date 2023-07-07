@@ -3,21 +3,26 @@ body{
     display: flex;
     flex-direction: column;
     margin:0;
-    border:0;
+    border:0;  
     background-image: url("../Assets/background.jpg");
     background-position: center;
     background-size: 100%;
+    background-attachment: fixed;
     animation-name: background-bs;
     animation-duration: 30s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; 
 }
+
+/* #cover{
+    
+} */
 
 #front-container{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 93vh;
+    height: 100vh;
     
 }
 
@@ -37,7 +42,7 @@ body{
 #front-title-container>h1{
     font-size:5vw;
     color: var(--text);
-    font-family: Helvetica, sans-serif;
+    font-family: 'Trebuchet MS';
     text-decoration: underline;
     text-decoration-color: var(--contrast);
 }
@@ -45,7 +50,7 @@ body{
 #front-title-container>h3{
     font-size:3vw;
     color: var(--text);
-    font-family: Helvetica, sans-serif;
+    font-family: 'Trebuchet MS';
 }
 
 #front-title-container>p{
@@ -93,3 +98,89 @@ body{
     background-color: var(--transparent);
     border-width: 2px;
 }
+
+.screen-container{
+    display:flex;
+    flex-direction: row;
+    height: 100vh;
+    background-color: black;
+
+    background-image: url("../Assets/background-dark.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+    animation-name: background-bs;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+.content-seperator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 50vw;
+}
+
+.content-seperator>h1{
+    color: var(--text);
+    font-size: 4vw;
+    align-items: center;
+    text-align: center;
+}
+
+.content-seperator>p{
+    color: var(--contrast);
+    padding: 20px 90px;
+    font-size: 1.2vw;
+    text-align: justify;
+
+    
+}
+
+.learnmore-button{
+    margin-top: 10px;
+    padding: 7px 20px;
+    font-size: 1.2vw;
+    align-self: center;
+
+    background-color: var(--contrast);
+    color: #0c0c0c;
+    border-style:solid;
+    border-color: var(--contrast);
+
+    transition: all 0.3s;
+}
+
+.learnmore-button:hover{
+    background-color: transparent;
+    color: var(--contrast);
+}
+
+.image{
+    width:40vw; 
+    /* border:4px solid var(--contrast);  */
+    border-radius: 20px;
+    /* transition: transform 1s; */
+    animation-name: rotation;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* .image:hover{
+    transform: rotate(65deg);
+} */
+
+@keyframes rotation {
+    0%{
+        transform: scale(100%) rotate(45deg);
+    }
+
+    100%{
+        transform: scale(100%) rotate(360deg);
+    }
+}
+
+/* .wrapper {
+} */

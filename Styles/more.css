@@ -1,0 +1,97 @@
+:root{
+    --light-text:#dce0e4ce;
+    --text:#eff2f5;
+    --transparent: #00000079;
+    --darker:#0d1013;
+    --dark:#12161a;
+    --med:#1a2128;
+    --contrast:#ffea00;
+    --orange:#ffc847;
+    --light-orange:#ffc847b0;
+}
+
+body{
+    background-color: rgb(16, 16, 18);
+    padding:70px 100px 70px 30px;
+}
+
+h1,.heading{
+    color: var(--orange);
+    font-size: 3vw;
+
+    margin-bottom: 10px;
+
+    text-align: left;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h2,.sub-sub-heading{
+    color: var(--orange);
+    font-size: 2vw;
+
+    text-align: left;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h3,.sub-sub-heading{
+    color: var(--light-orange);
+    font-size: 1.7vw;
+
+    text-align: left;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+p{
+    color: var(--light-text);
+    font-size: 1.1vw;
+    font-weight: normal;
+    text-align: justify;
+}
+
+.h-container{
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    justify-content:center;
+}
+
+.v-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+.details-input{
+    width:15vw;
+    background-color: transparent;
+    color: var(--light-text);
+    padding: 5px 10px;
+    border-style:solid;
+    border-color: var(--light-text);
+    margin: 5px;
+}
+
+.details-input-wide{
+    width:32vw;
+    align-self: center;
+}
+
+#button{
+    background-color: transparent;
+    border: solid var(--text);
+    border-width: 1px;
+    color: var(--text);
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: border-width 0.1s;
+}
+
+#button:hover{
+    background-color: var(--transparent);
+    border-width: 2px;
+}
+
+.key{
+    color: var(--text);
+    font-size: 1.2vw;
+    font-weight: 600;
+}
