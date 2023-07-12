@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(16, 16, 18);
+    background: url("../Assets/BlackBack.jpg") no-repeat center center fixed; 
 }
 
 .content-seperator>h1{

@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(16, 16, 18);
+    background: url("../Assets/BlackBack.jpg") no-repeat center center fixed; 
 }
 
 
@@ -7,7 +7,13 @@ body{
     display:flex;
     flex-direction: row;
     height: 100vh;
-    background-color: rgb(15, 15, 18);
+    /* background-color: rgb(15, 15, 18); */
+
+    /* background-color: rgb(16, 16, 18); */
+
+    
+    /* background-position: center; */
+    /* background-attachment: fixed; */
 }
 
 .content-seperator{
@@ -56,11 +62,12 @@ body{
 .name{
     color: var(--text);
     font-size: 2vw;
-    font-family: cursive;
+    font-family: monospace;
 }
 
 .role{
     color: var(--light-text);
     font-size: 0.9vw;
     font-family: sans-serif;
+    margin-top: 2px;
 }

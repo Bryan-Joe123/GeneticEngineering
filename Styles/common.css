@@ -92,7 +92,7 @@ body::-webkit-scrollbar {
     display:flex;
     flex-direction: row;
     height: 100vh;
-    background-color: rgb(15, 15, 18);
+    /* background-color: rgb(15, 15, 18); */
 }
 
 .content-seperator{
