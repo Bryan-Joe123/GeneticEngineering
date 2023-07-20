@@ -22,7 +22,7 @@ body{
 .text-container{
     display:flex;
     flex-direction: column;
-    width: 73vw;
+    width: 70vw;
 
     transition: width 0.5s;
 }

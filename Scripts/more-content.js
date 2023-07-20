@@ -33,7 +33,7 @@ function toggleToC(){
 
         for (let x = 0; x < textCont.length; x++) {
             const element = textCont[x];
-            element.style.width = "73vw"
+            element.style.width = "70vw"
         }
     }
 }
