@@ -6,15 +6,28 @@
     <link rel="stylesheet" href="../Styles/common.css">
     <link rel="stylesheet" href="../Styles/home.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-deferred@2.0.0/dist/chartjs-plugin-deferred.min.js"></script>
     <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="/Assets/Favicon.png"> 
+    <script src="../Scripts/scroll-animation.js"></script>
 </head>
 <body>
     <div id="header-container">
-        <img src="../Assets/Logo.png" alt="Logo" width="70vw" height="70vw">
-        Logo
+        <img src="../Assets/Logo.png" alt="Logo" width="70vw" height="70vw"  onclick="window.location = './home.html'">
         <div id="header-button-container">
             <button class="header-buttons">Home</button>
-            <button class="header-buttons" onclick="window.location = './more.html'">More</button>
+            <!-- onclick="window.location = './more.html'" -->
+            <div class="dropdown">
+                <button class="header-buttons">More</button>
+                <div class="dropdown-content">
+                    <a onclick="window.location = './More/application.html'">Application</a>
+                    <a onclick="window.location = './More/risk.html'">The Risk</a>
+                    <a onclick="window.location = './More/future.html'">The Future</a>
+                    <a onclick="window.location = './More/crispr.html'">CRISPR</a>
+                </div>
+            </div>
+            
+            
             <button class="header-buttons" onclick="window.location = './about.html'">About</button>
             <button class="header-buttons" onclick="window.location = './contact.html'">Contact</button>
         </div>
@@ -26,7 +39,7 @@
                 <h1>Genetic Engineering</h1>
                 <h3>in Health care</h3>
                 <p>The <b>future</b> of <b>health care</b> and <b>gene modification</b> is Here</p>
-                <button id="front-more-button" onclick="window.location = '#GeneEng-main'">Learn More</button>
+                <button id="front-learnmore-button" onclick="window.location = '#GeneEng-main'">Learn More</button>
             </div>
             <h5>➤</h5>
         </div>
@@ -52,7 +65,7 @@
                 <span class="white">human insulin</span>, <span class="white">human growth hormone</span>, and <span class="white">hepatitis B vaccine</span>, as well as to the development
                 of genetically modified organisms such as <span class="white">disease-resistant plants</span>.
             </p>
-            <button class="learnmore-button" onclick="window.location = './more.html#GeneEng-more'">Learn More</button>
+            <button class="learnmore-button" onclick="window.location = './More/crispr.html'">Learn More</button>
         </div>
         <div class="content-seperator" style="display:flex; justify-content: center; align-items: center;">
             <img src="../Assets/DNAs.png" alt="dna" class="image">
@@ -62,7 +75,7 @@
     <div class="screen-container">
         
         <div class="content-seperator" style="display:flex; justify-content: center; align-items: center;">
-            <span style="color: var(--contrast);font-size: 20vh;font-family: fantasy;">1.2B+</span>            
+            <div id="big-text-container"><span class="big-text">1</span><span class="big-text">.</span><span class="big-text">4</span><span class="big-text">B</span><span class="big-text">+</span></div>
         </div>
         <div class="content-seperator">
             <h1>How will it affect <br>Health Care</h1>
@@ -95,14 +108,14 @@
             </p>
         </div>
         <div class="content-seperator" style="display:flex; justify-content: center; align-items: center;">
-            <div class="container chart" data-size="300" data-value="40" data-arrow="up"></div>
+            <div><canvas id="disease-chart"></canvas></div>
         </div>
     </div>
     <!-- <hr> -->
     <div class="screen-container">
         
         <div class="content-seperator" style="display:flex; justify-content: center; align-items: center;">
-            <canvas id="cost-chart"></canvas>            
+            <canvas id="cost-chart"></canvas>    
         </div>
         <div class="content-seperator">
             <h1>Genome Sequencing</h1>
@@ -121,7 +134,7 @@
     <!-- <hr> -->
     <div class="screen-container">
         <div class="content-seperator" >
-            <h1>CRISPR </h1>
+            <h1>CRISPR</h1>
             <h3>The new revolution</h3>
             <p>
                 The <span class="white">CRISPR-Cas9</span> system has generated a lot of excitement in the scientific community 
@@ -131,7 +144,7 @@
                 Its a new technology that enables gene editing to be available in a really <span class="white">cheaper</span> price
                 compared to the traditional methods
             </p>
-            <button class="learnmore-button" onclick="window.location = './more.html#CRISPR-more'">Learn More</button>
+            <button class="learnmore-button" onclick="window.location = './More/crispr.html'">Learn More</button>
         </div>
         <div class="content-seperator" style="display:flex; justify-content: center; align-items: center;">
             <iframe width="559" height="315"
@@ -156,10 +169,10 @@
             <button class="learnmore-button" onclick="window.location = 'https://education.nationalgeographic.org/resource/genetically-modified-organisms/'">Learn More</button>
         </div>
     </div>
-    <script src="../Scripts/donut-chart.js"></script>
     <script>
         const ctx = document.getElementById('cost-chart');
-      
+        const dtx = document.getElementById('disease-chart');
+        
         new Chart(ctx, {
           type: 'line',
           data: {
@@ -170,23 +183,68 @@
                 borderWidth: 1,
                 backgroundColor: '#ffea0011',
                 borderColor:'#ffea00',
-                color:'#ffea00'
+                color:'#ffea00',
+                
             }]
           },
           options: {
             scales: {
               y: {
-                beginAtZero: true
+                beginAtZero: true,
+                ticks: {
+                    color: "#ffffff"
+                }
+              },
+              x:{
+                ticks: {
+                    color: "#ffffff"
+                }
               }
             },
             plugins: {
                 title: {
                     display: true,
-                    text: 'Cost of Genome Sequencing'
+                    text: 'Cost of Genome Sequencing',
+                    color: "#ffffff"
+                },
+                deferred: {
+                    xOffset: 150,   // defer until 150px of the canvas width are inside the viewport
+                    yOffset: '50%', // defer until 50% of the canvas height are inside the viewport
+                    delay: 500      // delay of 500 ms after the canvas is considered inside the viewport
                 }
             },
           },
         });
+
+        new Chart(dtx, {
+          type: 'doughnut',
+          data: {
+            labels: [
+                'Caused by Decease',
+                'Not Caused by Decease',
+            ],
+            datasets: [{
+                label: 'My First Dataset',
+                data: [40, 60],
+                backgroundColor: [
+                '#ffea00',
+                '#ffea0011'
+                ],
+                hoverOffset: 4
+            }]
+            },
+            options: {
+                // ... other options ...
+                plugins: {
+                deferred: {
+                    xOffset: 150,   // defer until 150px of the canvas width are inside the viewport
+                    yOffset: '50%', // defer until 50% of the canvas height are inside the viewport
+                    delay: 500      // delay of 500 ms after the canvas is considered inside the viewport
+                }
+                }
+            }
+        });
+        
       </script>
 </body>
 </html>

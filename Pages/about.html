@@ -6,16 +6,27 @@
     <link rel="stylesheet" href="../Styles/common.css">
     <link rel="stylesheet" href="../Styles/about.css">
     
-    <title>Home</title>
+    <title>About</title>
+    <link rel="icon" type="image/x-icon" href="/Assets/Favicon.png"> 
+
 </head>
 <body>
     <div id="header-container">
-        <img src="../Assets/Logo.png" alt="Logo" width="70vw" height="70vw">
-        <div></div>
+        <img src="../Assets/Logo.png" alt="Logo" width="70vw" height="70vw"  onclick="window.location = './home.html'">
         <div id="header-button-container">
             <button class="header-buttons" onclick="window.location = './home.html'">Home</button>
-            <button class="header-buttons" onclick="window.location = './more.html'">More</button>
-            <button class="header-buttons">About</button>
+            <!-- onclick="window.location = './more.html'" -->
+            <div class="dropdown">
+                <button class="header-buttons">More</button>
+                <div class="dropdown-content">
+                    <a onclick="window.location = './More/application.html'">Application</a>
+                    <a onclick="window.location = './More/risk.html'">The Risk</a>
+                    <a onclick="window.location = './More/future.html'">The Future</a>
+                    <a onclick="window.location = './More/crispr.html'">CRISPR</a>
+                </div>
+            </div>
+            
+            <button class="header-buttons" onclick="window.location = './about.html'">About</button>
             <button class="header-buttons" onclick="window.location = './contact.html'">Contact</button>
         </div>
     </div>
@@ -24,8 +35,8 @@
         <div class="content-seperator">
             <h1>About us</h1>
             <p>
-            Well hello nice to see you here, this is an project created for the <b class="white">STAI 2023</b> competition held
-            in <b class="white">ISAM</b>. This website is created on the topic <b class="white">Genetic Engineering in healthcare</b>. It is 
+            Well hello nice to see you here, this is an project created for the <b class="white">STAI 2023</b> competition.
+            This website is created on the topic <b class="white">Genetic Engineering in healthcare</b>. It is 
             designed on the vision <b class="white">Show less gain more</b>. We would love to spread the future vission 
             we have in mind about genetic modification and its effects in out lives and the health care.
             <br><br>
@@ -38,12 +49,12 @@
         <div class="content-seperator">
             <div class="h-container">
                 <div class="v-container">
-                    <img class="photo" src="data:image/jpeg;base64,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" alt="idk"/>
+                    <img class="photo" src="../Assets/teamates/Bryan.jpeg" alt="idk"/>
                     <span class="name">Bryan Joe</span>
                     <span class="role">Web Developer</span>
                 </div>
                 <div class="v-container">
-                    <img class="photo" src="data:image/jpeg;base64,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" alt="idk"/>
+                    <img class="photo" src="../Assets/teamates/Dharshanan.jpeg" alt="idk"/>
                     <span class="name">Dharshanan</span>
                     <span class="role">Designer</span>
                 </div>

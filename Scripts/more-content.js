@@ -19,7 +19,8 @@ function toggleToC(){
 
         for (let x = 0; x < textCont.length; x++) {
             const element = textCont[x];
-            element.style.width = "90vw"
+            // element.style.width = "90vw"
+            setTimeout(element.style.width = "90vw", 1000*x);
         }
     }
     else if(ToC.classList.contains("table-contents-hide")){

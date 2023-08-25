@@ -6,23 +6,40 @@
     <link rel="stylesheet" href="../Styles/common.css">
     <link rel="stylesheet" href="../Styles/more.css">
     <script src="../Scripts/more-content.js"></script>
-    <title>Home</title>
+    <title>More</title>
+    <link rel="icon" type="image/x-icon" href="/Assets/Favicon.png"> 
+
 </head>
 <body>
     <div class="h-container" style="align-items: right; justify-content:right;">
-        <div id="table-contents" class="table-contents">
-            <h1 style="margin-top: 10px;">Table of Contents</h1>
-            <h3 class="selected" onclick="switchCont('GeneEng')" id="GeneEng-ToC">Genetic Engineering</h3>
-            <h3 onclick="switchCont('Application')" id="Application-ToC">The Application</h3>
-            <h3 onclick="switchCont('Risk')" id="Risk-ToC">The Risk Involved</h3>
-            <h3 onclick="switchCont('Future')" id="Future-ToC">The Future</h3>
-            <h3 onclick="switchCont('CRISPR')" id="CRISPR-ToC">CRISPR-Cas9</h3>
+        <div id="header-container">
+            <img src="../Assets/Logo.png" alt="Logo" width="70vw" height="70vw"  onclick="window.location = './home.html'">
+            <div id="header-button-container">
+                <button class="header-buttons" onclick="window.location = './home.html'">Home</button>
+                <div class="dropdown">
+                    <button class="header-buttons">More</button>
+                    <div class="dropdown-content">
+                        <a onclick="window.location = './More/application.html'">Application</a>
+                        <a onclick="window.location = './More/risk.html'">The Risk</a>
+                        <a onclick="window.location = './More/future.html'">The Future</a>
+                        <a onclick="window.location = './More/crispr.html'">CRISPR</a>
+                    </div>
+                </div>
+                
+                <button class="header-buttons" onclick="window.location = './about.html'">About</button>
+                <button class="header-buttons" onclick="window.location = './contact.html'">Contact</button>
+            </div>
         </div>
         <div>
-            <div id="header-container" >
-                <!-- <img src="../Assets/Logo.png" alt="Logo" width="70vw" height="70vw"> -->
+            <div id="header-container">
+                <input hidden="" class="check-icon" id="check-icon" name="check-icon" type="checkbox" onclick="toggleToC()" checked="true">
+                <label class="icon-menu" for="check-icon" style="margin-left: 30px;">
+                    <div class="bar bar--1"></div>
+                    <div class="bar bar--2"></div>
+                    <div class="bar bar--3"></div>
+                </label>
                 
-                <div style="color: var(--text); font-size: 2vw; margin: 5px;" onclick="toggleToC()">☰</div>
+                <!-- <div style="color: var(--text); font-size: 2vw; margin: 5px;" onclick="toggleToC()">☰</div> -->
                 <div id="header-button-container">
                     <button class="header-buttons" onclick="window.location = './home.html'">Home</button>
                     <button class="header-buttons" onclick="toggleToC()">More</button>
@@ -98,13 +115,17 @@
                 <iframe width="559" height="315" style="align-self: center; margin: 40px 0px;"
                 src="https://www.youtube.com/embed/jAhjPd4uNFY">
                 </iframe>
-                <p>
+                
+                <div class="more-dropdown">
                     <span class="key">The CRISPR-Cas9 system consists of two key molecules that introduce a change (mutation?) into the DNA. These are:</span>
-                </p>
-                <ol>
-                    <li>an enzyme? called Cas9. This acts as a pair of 'molecular scissors' that can cut the two strands of DNA at a specific location in the genome so that bits of DNA can then be added or removed.</li>
-                    <li>A piece of RNA? called guide RNA (gRNA). This consists of a small piece of pre-designed RNA sequence (about 20 bases long) located within a longer RNA scaffold. The scaffold part binds to DNA and the pre-designed sequence 'guides' Cas9 to the right part of the genome. This makes sure that the Cas9 enzyme cuts at the right point in the genome.</li>
-                </ol>
+                    <div class="more-dropdown-content">
+                        <ol>
+                            <li>an enzyme? called Cas9. This acts as a pair of 'molecular scissors' that can cut the two strands of DNA at a specific location in the genome so that bits of DNA can then be added or removed.</li>
+                            <li>A piece of RNA? called guide RNA (gRNA). This consists of a small piece of pre-designed RNA sequence (about 20 bases long) located within a longer RNA scaffold. The scaffold part binds to DNA and the pre-designed sequence 'guides' Cas9 to the right part of the genome. This makes sure that the Cas9 enzyme cuts at the right point in the genome.</li>
+                        </ol>
+                    </div>
+                </div>
+                
                 <p>
                 <br>
                 The guide RNA is designed to find and bind to a specific sequence in the DNA. The guide RNA has RNA bases? that are complementary? to those of the target DNA sequence in the genome. This means that, at least in theory, the guide RNA will only bind to the target sequence and no other regions of the genome.
@@ -115,6 +136,19 @@
                 <br><br>
                 Scientists can use the DNA repair machinery to introduce changes to one or more genes? in the genome of a cell of interest.
                 </p>
+                <button class="learnmore-button" onclick="window.open('https://www.yourgenome.org/facts/what-is-crispr-cas9/', '_blank');">Learn More</button>
+            </div>
+            <div class="text-container">
+                <h1  id="References-more">References</h1> 
+                <ol>
+                    <li><a href="https://connectusfund.org/25-genetic-engineering-pros-and-cons">Connect Us Fund</a> - https://connectusfund.org/25-genetic-engineering-pros-and-cons</li>
+                    <li><a href="https://www.yourgenome.org/facts/what-is-crispr-cas9/">Your Genome</a> - https://www.yourgenome.org/facts/what-is-crispr-cas9/</li>
+                    <li><a href="https://www.genome.gov/genetics-glossary/Genetic-Engineering">Genome Gov</a> - https://www.genome.gov/genetics-glossary/Genetic-Engineering</li>
+                    <li><a href="https://www.britannica.com/science/genetic-engineering">Britannica</a> - https://www.britannica.com/science/genetic-engineering</li>
+                    <li><a href="https://www.sciencedirect.com/topics/neuroscience/genetic-engineering">Science Direct</a> - https://www.sciencedirect.com/topics/neuroscience/genetic-engineering</li>
+                    <li><a href="https://www.nature.com/scitable/topicpage/genetically-modified-organisms-gmos-transgenic-crops-and-732/">Nature.com</a> - https://www.nature.com/scitable/topicpage/genetically-modified-organisms-gmos-transgenic-crops-and-732/</li>
+                    <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3078015/">NCBI.nlm</a> - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3078015/</li>
+                </ol>
                 <button class="learnmore-button" onclick="window.open('https://www.yourgenome.org/facts/what-is-crispr-cas9/', '_blank');">Learn More</button>
             </div>
         </div>
