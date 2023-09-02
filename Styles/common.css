@@ -1,7 +1,8 @@
 :root{
     --light-text:#dce0e4ce;
-    --text:#eff2f5;
-    --transparent: #00000079;
+    --med-text:#eef1f5ec;
+    --text:#f8f9fa;
+    --transparent: rgba(0, 0, 0, 0.75);
     --darker:#0d1013;
     --dark:#12161a;
     --med:#1a2128;

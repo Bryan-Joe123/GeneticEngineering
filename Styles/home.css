@@ -1,9 +1,9 @@
-/* Front Page */
 body{
     display: flex;
     flex-direction: column;
     margin:0;
-    border:0;  
+    border:0;
+    background-color: transparent;
     background-image: url("../Assets/background.jpg");
     background-position: center;
     background-size: 100%;
@@ -19,7 +19,6 @@ body{
     justify-content: space-between;
     align-items: center;
     height: 100vh;
-    
 }
 
 @keyframes background-bs{
@@ -41,6 +40,7 @@ body{
     font-family: 'Trebuchet MS';
     text-decoration: underline;
     text-decoration-color: #9a60e0;
+    text-shadow: 7px 7px #0000006b;
     animation: underline-animation 4s linear infinite alternate-reverse;
 }
 
@@ -58,13 +58,16 @@ body{
 
 #front-title-container>h3{
     font-size:3vw;
-    color: var(--text);
+    color: var(--med-text);
+    /* filter: opacity(80%); */
     font-family: 'Trebuchet MS';
+    text-shadow: 3px 3px #0000006b;
 }
 
 #front-title-container>p{
-    font-size:1vw;
+    font-size:1.2vw;
     color: var(--text);
+    text-shadow: 2px 2px #0000006b;
 }
 
 #front-title-container>button{
@@ -102,6 +105,7 @@ body{
     background-color: black;
 
     background-image: url("../Assets/background-dark.jpg");
+    background-color: #000000cc;
     background-position: center;
     background-size: 100%;
     background-attachment: fixed;
@@ -138,8 +142,13 @@ body{
     padding: 10px 90px;
     font-size: 1.2vw;
     text-align: justify;
+}
 
-    
+.content-seperator>div>.list-item{
+    color: var(--contrast);
+    font-size: 1.2vw;
+    text-align: justify;
+    padding:10px;
 }
 
 .learnmore-button{
@@ -174,10 +183,6 @@ body{
     animation-timing-function: linear;
 }
 
-/* .image:hover{
-    transform: rotate(65deg);
-} */
-
 @keyframes rotation {
     0%{
         transform: scale(100%) rotate(45deg);
@@ -206,6 +211,23 @@ body{
     font-family: fantasy;
 }
 
+.med-text{
+    color: var(--contrast);
+    font-size: 10vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 0.2s;
+}
+
+.med-text:hover{
+    color: var(--orange);
+    /* font-size: 17vh; */
+    transform: scale(120%);
+    /* font-family: fantasy; */
+}
+
+.youtube-video{
+    border:none;
+}
 
 #front-learnmore-button{
     text-decoration: none;
@@ -261,3 +283,12 @@ body{
     background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
 }
 
+/* #myVideo {
+    z-index:-22;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100vw;
+} */

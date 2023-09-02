@@ -9,9 +9,14 @@
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-deferred@2.0.0/dist/chartjs-plugin-deferred.min.js"></script>
     <title>Home</title>
     <link rel="icon" type="image/x-icon" href="/Assets/Favicon.png"> 
-    <script src="../Scripts/scroll-animation.js"></script>
+    <script src="../Scripts/scroll.js"></script>
+
 </head>
+
 <body>
+    <!-- <video autoplay muted loop id="myVideo">
+        <source src="../Assets/background.mp4" type="video/mp4">
+    </video> -->
     <div id="header-container">
         <img src="../Assets/Logo.png" alt="Logo" width="70vw" height="70vw"  onclick="window.location = './home.html'">
         <div id="header-button-container">
@@ -24,10 +29,10 @@
                     <a onclick="window.location = './More/risk.html'">The Risk</a>
                     <a onclick="window.location = './More/future.html'">The Future</a>
                     <a onclick="window.location = './More/crispr.html'">CRISPR</a>
+                    <a onclick="window.location = './More/stories.html'">Stories</a>
                 </div>
             </div>
-            
-            
+
             <button class="header-buttons" onclick="window.location = './about.html'">About</button>
             <button class="header-buttons" onclick="window.location = './contact.html'">Contact</button>
         </div>
@@ -61,19 +66,18 @@
                 molecules in order to modify an organism or population of organisms. The term <span class="white">genetic engineering</span> 
                 is generally used to refer to methods of recombinant <span class="white">DNA</span> technology, which
                 emerged from basic research in microbial genetics. <br><br> The techniques employed in genetic 
-                engineering have led to the production of medically important products, including 
+                engineering has led to the production of medically important products, including 
                 <span class="white">human insulin</span>, <span class="white">human growth hormone</span>, and <span class="white">hepatitis B vaccine</span>, as well as to the development
                 of genetically modified organisms such as <span class="white">disease-resistant plants</span>.
             </p>
             <button class="learnmore-button" onclick="window.location = './More/crispr.html'">Learn More</button>
         </div>
         <div class="content-seperator" style="display:flex; justify-content: center; align-items: center;">
-            <img src="../Assets/DNAs.png" alt="dna" class="image">
+            <img src="../Assets/Images/DNAs.png" alt="dna" class="image">
         </div>
     </div>
     <!-- <hr> -->
     <div class="screen-container">
-        
         <div class="content-seperator" style="display:flex; justify-content: center; align-items: center;">
             <div id="big-text-container"><span class="big-text">1</span><span class="big-text">.</span><span class="big-text">4</span><span class="big-text">B</span><span class="big-text">+</span></div>
         </div>
@@ -81,8 +85,8 @@
             <h1>How will it affect <br>Health Care</h1>
             <p>
                 It will be a new revolution in the health industry, new cures and <span class="white">personalized medicine</span>
-                will be available. It will play major role in treating <span class="white">cancer</span>. It will be able to save
-                a <span class="white">BILLION</span> people from various deceases and can reduce ageing drastically. <br><br>
+                will be available. It will play a major role in treating <span class="white">cancer</span>. It will be able to save
+                 <span class="white">BILLIONS</span> of people from various diseases and can reduce ageing drastically. <br><br>
 
                 Gene therapy is a promising field that uses <span class="white">genetic engineering</span> techniques to 
                 introduce or <span class="white">modify genes</span> in a person's cells. It holds potential for treating 
@@ -107,8 +111,9 @@
                 the advancements in this field.
             </p>
         </div>
-        <div class="content-seperator" style="display:flex; justify-content: center; align-items: center;">
+        <div class="content-seperator" style="display:flex; justify-content: center; align-items: center; flex-direction: row;">
             <div><canvas id="disease-chart"></canvas></div>
+            <div id="big-text-container" style="margin-top: 50px;"><span class="med-text">4</span><span class="med-text">0</span><span class="med-text">%</span></div>
         </div>
     </div>
     <!-- <hr> -->
@@ -131,7 +136,6 @@
             </p>
         </div>
     </div>
-    <!-- <hr> -->
     <div class="screen-container">
         <div class="content-seperator" >
             <h1>CRISPR</h1>
@@ -147,16 +151,57 @@
             <button class="learnmore-button" onclick="window.location = './More/crispr.html'">Learn More</button>
         </div>
         <div class="content-seperator" style="display:flex; justify-content: center; align-items: center;">
-            <iframe width="559" height="315"
+            <iframe width="559" height="315" class="youtube-video"
             src="https://www.youtube.com/embed/jAhjPd4uNFY">
             </iframe>        
         </div>
     </div>
+
     <div class="screen-container">
-        <div class="content-seperator" style="display:flex; justify-content: center; align-items: center;">
-            <iframe width="559" height="315"
-            src="https://www.youtube.com/embed/7TmcXYp8xu4">
-            </iframe>        
+        <div class="content-seperator" style="display:flex; justify-content: center; align-items: center; padding: 30px;">
+            <h1>Hopes</h1>
+            <h3>for genetic testing</h3>
+            <div style="display:flex;align-items: center;">
+                <img src="https://royalsociety.org/assets/genetics/images/section6-list-item1.svg" alt="e" height="70vw" width="70vw">
+                <span class="list-item">If you know you have a genetic disorder, you might be able to get suitable treatment, or act in a way that will reduce the chance of the disease developing.</span>
+            </div>
+            <br><br>
+            <div style="display:flex;align-items: center;">
+                <img src="https://royalsociety.org/assets/genetics/images/section6-list-item2.svg" alt="e" height="70vw" width="70vw">
+                <span class="list-item">Effective preventive treatment could reduce costs to health services. We will also be able to provide personalized medicines depending on the patients</span>
+            </div>
+            <br><br>
+            <div style="display:flex;align-items: center;">
+                <img src="https://royalsociety.org/assets/genetics/images/section6-list-item3.svg" alt="e" height="70vw" width="70vw">
+                <span class="list-item">Even if there is no treatment, accessing information about your future health can help you make decisions about your future, including whether or not to have children.</span>
+            </div>
+            <!-- <button class="learnmore-button" onclick="window.location = './More/crispr.html'">Learn More</button> -->
+        </div>
+        <div class="content-seperator" style="display:flex; justify-content: center; align-items: center;padding: 40px 30px;">
+            <h1>Concerns</h1>
+            <h3>about genetic testing</h3>
+            <div style="display:flex;align-items: center;">
+                <img src="https://royalsociety.org/assets/genetics/images/section6-list-item4.svg" alt="e" height="70vw" width="70vw">
+                <span class="list-item">If your genetic data became available to third parties, such as insurance providers, they might offer you a reduced level of service as a result.</span>
+            </div>
+            <br><br>
+            <div style="display:flex;align-items: center;">
+                <img src="https://royalsociety.org/assets/genetics/images/section6-list-item5.svg" alt="e" height="70vw" width="70vw">
+                <span class="list-item">The cost of genetic testing could take resources away from other parts of the NHS(National Health Service).</span>
+            </div>            
+            <br><br>
+            <div style="display:flex;align-items: center;">
+                <img src="https://royalsociety.org/assets/genetics/images/section6-list-item6.svg" alt="e" height="70vw" width="70vw">
+                <span class="list-item">Being told that you or a family member is at risk of a genetic disorder can affect relationships and cause anxiety.</span>
+            </div>           
+            
+            <!-- <button class="learnmore-button" onclick="window.location = './More/crispr.html'">Learn More</button>        -->
+        </div>
+    </div>
+    <div class="screen-container">
+        <div class="content-seperator" style="display:flex; justify-content: center; align-items: center; padding: 30px;">
+            <iframe width="559" height="315" class="youtube-video"
+            src="https://www.youtube.com/embed/7TmcXYp8xu4"></iframe>        
         </div>
         <div class="content-seperator">
             <h1>GMO</h1>
@@ -169,79 +214,133 @@
             <button class="learnmore-button" onclick="window.location = 'https://education.nationalgeographic.org/resource/genetically-modified-organisms/'">Learn More</button>
         </div>
     </div>
-    <script>
-        const ctx = document.getElementById('cost-chart');
-        const dtx = document.getElementById('disease-chart');
-        
-        new Chart(ctx, {
-          type: 'line',
-          data: {
-            labels: ["2007","2010","2014","Now"],
-            datasets: [{
-                label: 'Cost in $',
-                data: [1000000, 100000, 1000, 600],
-                borderWidth: 1,
-                backgroundColor: '#ffea0011',
-                borderColor:'#ffea00',
-                color:'#ffea00',
-                
-            }]
-          },
-          options: {
-            scales: {
-              y: {
-                beginAtZero: true,
-                ticks: {
-                    color: "#ffffff"
-                }
-              },
-              x:{
-                ticks: {
-                    color: "#ffffff"
-                }
-              }
-            },
-            plugins: {
-                title: {
-                    display: true,
-                    text: 'Cost of Genome Sequencing',
-                    color: "#ffffff"
-                },
-                deferred: {
-                    xOffset: 150,   // defer until 150px of the canvas width are inside the viewport
-                    yOffset: '50%', // defer until 50% of the canvas height are inside the viewport
-                    delay: 500      // delay of 500 ms after the canvas is considered inside the viewport
-                }
-            },
-          },
-        });
 
-        new Chart(dtx, {
-          type: 'doughnut',
-          data: {
-            labels: [
-                'Caused by Decease',
-                'Not Caused by Decease',
-            ],
-            datasets: [{
-                label: 'My First Dataset',
-                data: [40, 60],
-                backgroundColor: [
-                '#ffea00',
-                '#ffea0011'
-                ],
-                hoverOffset: 4
-            }]
-            },
-            options: {
-                // ... other options ...
-                plugins: {
-                deferred: {
-                    xOffset: 150,   // defer until 150px of the canvas width are inside the viewport
-                    yOffset: '50%', // defer until 50% of the canvas height are inside the viewport
-                    delay: 500      // delay of 500 ms after the canvas is considered inside the viewport
-                }
-                }
+    <div class="screen-container">
+        <div class="content-seperator">
+            <h1>Donate Now</h1>
+            <h3>and make a difference</h3>
+            <p>
+                Help us make a <span class="white">difference</span>, you can be an active part of the <span class="white">development</span> towards <span class="white">genetic engineering</span>.Genetics is the future of upcoming generations, which will provide them an reliable technology to reduce deaths due to several <span class="white">dangerous diseases</span>. We will also be able to cure <span class="white">cancer</span> that will be incurable with te help of <span class="white">traditional methods</span>.
+                <br><br>
+                <span class="white">Why donate?</span> <br> Your <span class="white">support</span> is an investment in our shared <span class="white">future</span>. Help us sustain GSA career programs
+                and conferences and develop new ways to serve our <span class="white">research community</span>.
+            </p>
+            <button class="learnmore-button" onclick="window.location = 'https://genetics-gsa.org/donate/'">Donate Now</button>
+        
+        </div>
+        <div class="content-seperator" style="display:flex; justify-content: center; align-items: center;">
+            <img src="../Assets/Images/lab.png" alt="">
+        </div>
+    </div>
+    <script>
+        const lineChart = document.getElementById('cost-chart');
+        let lineChartCreated = false
+        let lineInView = false;
+        const pieChart = document.getElementById('disease-chart');
+        let pieChartCreated = false
+        let pieInView = false;
+
+        function isInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+
+            );
+        }
+
+        document.addEventListener('scroll',function() {
+            if (isInViewport(pieChart) && !pieChartCreated){
+                console.log(!pieChartCreated);
+                pieInView = true;
+                new Chart(pieChart, {
+                    type: 'doughnut',
+                    data: {
+                        labels: [
+                            'Caused by Diseases',
+                            'Not Caused by Diseases',
+                        ],
+                        datasets: [{
+                            label: 'My First Dataset',
+                            data: [40, 60],
+                            backgroundColor: [
+                            '#ffea00',
+                            '#ffea0011'
+                            ],
+                            hoverOffset: 4
+                        }]
+                    },
+                    options: {
+                        // ... other options ...
+                        plugins: {
+                            title: {
+                            display: true,
+                            text: 'Disease Caused by Genetics',
+                            color: "#ffffff"
+                        },
+                        deferred: {
+                            xOffset: 150,   // defer until 150px of the canvas width are inside the viewport
+                            yOffset: '50%', // defer until 50% of the canvas height are inside the viewport
+                            delay: 500      // delay of 500 ms after the canvas is considered inside the viewport
+                        }
+                        }
+                    }
+                });
+                pieChartCreated = true
+            } else {
+                pieInView = false;
+            }
+
+            if (isInViewport(lineChart) && !lineChartCreated){
+                console.log(!lineChartCreated);
+                lineInView = true;
+                new Chart(lineChart, {
+                    type: 'line',
+                    data: {
+                        labels: ["2007","2010","2014","Now"],
+                        datasets: [{
+                            label: 'Cost in $',
+                            data: [1000000, 100000, 1000, 600],
+                            borderWidth: 1,
+                            backgroundColor: '#ffea0011',
+                            borderColor:'#ffea00',
+                            color:'#ffea00',
+                            
+                        }]
+                    },
+                    options: {
+                        scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                color: "#ffffff"
+                            }
+                        },
+                        x:{
+                            ticks: {
+                                color: "#ffffff"
+                            }
+                        }
+                        },
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: 'Cost of Genome Sequencing',
+                                color: "#ffffff"
+                            },
+                            deferred: {
+                                xOffset: 150,   // defer until 150px of the canvas width are inside the viewport
+                                yOffset: '50%', // defer until 50% of the canvas height are inside the viewport
+                                delay: 500      // delay of 500 ms after the canvas is considered inside the viewport
+                            }
+                        },
+                    },
+                });
+                lineChartCreated = true
+            } else {
+                lineInView = false;
             }
         });
         

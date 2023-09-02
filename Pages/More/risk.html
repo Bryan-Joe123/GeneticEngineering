@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="/Styles/common.css">
     <link rel="stylesheet" href="/Styles/more.css">
     <!-- <link rel="stylesheet" href="/Styles/about.css"> -->
+
+    <script src="/Scripts/more-content.js"></script>
     
     <title>Risk</title>
     <link rel="icon" type="image/x-icon" href="/Assets/Favicon.png"> 
@@ -24,6 +26,7 @@
                     <a onclick="window.location = './risk.html'">The Risk</a>
                     <a onclick="window.location = './future.html'">The Future</a>
                     <a onclick="window.location = './crispr.html'">CRISPR</a>
+                    <a onclick="window.location = './stories.html'">Stories</a>
                 </div>
             </div>
             
@@ -32,60 +35,86 @@
         </div>
     </div>
     <div id="screen-container">
-        <div class="content-seperator">
-            <h1 id="Application-more">The Application <span class="sub-sub-heading">of genetic engineering</span></h1> 
-            <div class="more-dropdown">
-                <span class="key">1. Ethical Concerns</span>
-                <div class="more-dropdown-content">
-                    Genetic engineering raises ethical questions about playing with the fundamental building blocks of life. There are concerns about the unintended consequences of manipulating genes and creating organisms with specific traits, potentially leading to unforeseen negative impacts on ecosystems or the organisms themselves.
-                </div>
-            </div>
-            <div class="more-dropdown">
-                <span class="key">2. Unintended Consequences</span>
-                <div class="more-dropdown-content">
-                    Genetic modifications can have unintended effects on an organism's physiology, behavior, or interactions with its environment. These unintended consequences might not become apparent until after the modified organisms are released into the wild or used extensively in agriculture.
-                </div>
-            </div>
-            <div class="more-dropdown">
-                <span class="key">3. Health Risks</span>
-                <div class="more-dropdown-content">
-                    There are concerns about the potential health risks associated with consuming genetically modified foods. While regulatory bodies generally approve GMOs for consumption, long-term effects on human health are still a subject of ongoing research and debate.
-                </div>
-            </div>
-            <div class="more-dropdown">
-                <span class="key">4. Resistance and Adaptation</span>
-                <div class="more-dropdown-content">
-                    Pests and pathogens could potentially evolve and develop resistance to genetically modified crops designed to resist them. This could lead to the emergence of superbugs or superweeds that are difficult to control and could have broader ecological implications.
-                </div>
-            </div>
-            <div class="more-dropdown">
-                <span class="key">5. Unpredictable Gene Flow</span>
-                <div class="more-dropdown-content">
-                    Genes from genetically modified organisms can potentially spread to wild relatives through crossbreeding, leading to unintended genetic changes in natural populations. This gene flow could have ecological and evolutionary consequences.
-                </div>
-            </div>
-            <div class="more-dropdown">
-                <span class="key">6. Social and Economic Impacts</span>
-                <div class="more-dropdown-content">
-                    Genetic engineering could exacerbate socio-economic inequalities. If certain genetically modified crops or technologies become dominant, traditional agricultural practices and local knowledge might be devalued, impacting the livelihoods of local communities.
-                </div>
-            </div>
-            <div class="more-dropdown">
-                <span class="key">7. Regulatory Challenges</span>
-                <div class="more-dropdown-content">
-                    Developing and enforcing regulations for genetic engineering can be complex and challenging. Ensuring that GMOs are safe for both human health and the environment requires robust oversight and testing procedures.
-                </div>
-            </div>
-            <div class="more-dropdown">
-                <span class="key">8. Allergenicity</span>
-                <div class="more-dropdown-content">
-                    Genetic engineering could introduce new allergens or increase the allergenic potential of certain foods. This could pose risks to individuals with allergies who consume genetically modified products unknowingly.
-                </div>
+        <div class="content-seperator" id="content-selector-container">
+            <h1 id="Application-more">Success Stories <span class="sub-sub-heading"></span></h1>
+            <div id="selection-container">
+                <h3 class="selection" id="Dolly-Selector" onclick="switchContent('Dolly-Content','Dolly-Selector')">1. Cloning (Dolly)</h3>
+                <h3 class="selection" id="Tomatoes-Selector" onclick="switchContent('Tomatoes-Content','Tomatoes-Selector')">2. Wild Tomatoes</h3>
+                <h3 class="selection" id="GrowthHormone-Selector" onclick="switchContent('GrowthHormone-Content','GrowthHormone-Selector')">3. Synthetic Human Growth Hormone</h3>
+                <h3 class="selection" id="DarkCats-Selector" onclick="switchContent('DarkCats-Content','DarkCats-Selector')">4. Glow-in-the-Dark Cats</h3>
+                <h3 class="selection" id="GoldenRice-Selector" onclick="switchContent('GoldenRice-Content','GoldenRice-Selector')">5. Golden Rice</h3>
             </div>
         </div>
-        <iframe width="559" height="315" style="align-self:center;margin: 10px 0px;"
-                src="https://www.youtube.com/embed/9FppammO1zk">
-                </iframe>
+        <div class="content-seperator" id="more-content">
+            <div class="more-content-container more-content-show" id="Dolly-Content">
+                <h2>Cloning (Dolly)</h2>
+                <p>Dolly was important because she was the first mammal to be cloned from an adult cell. Her birth proved that specialised cells could be used to create an exact copy of the animal they came from.</p>
+                <div style="display:flex;justify-content: space-between; margin: 30px 0px;">
+                    <div style="display:flex;flex-direction: column;flex-wrap: wrap;width: 300px;justify-content: center;align-items: center;text-align: justify;">
+                        <img src="https://www.nms.ac.uk/media/1164110/dolly-and-surrogate-mother_0.jpg" width="200" height="200" alt="Dolly">
+                        <h4 class="image-title" >Dolly as a lamb with her Scottish Blackface surrogate mother. Photo courtesy of the Roslin Institute, University of Edinburgh, UK.</h4>
+                    </div>
+                    <div style="display:flex;flex-direction: column;flex-wrap: wrap;width: 300px;justify-content: center;align-items: center;text-align: justify;margin-left: 50px;">
+                        <img src="https://www.nms.ac.uk/media/1164113/profianwilmutdolly.jpg" width="300" height="200" alt="Dolly">
+                        <h4 class="image-title" >Dolly with Professor Sir Ian Wilmut, who led the research which produced her. Photo courtesy of the Roslin Institute, University of Edinburgh, UK.</h4>
+                    </div>
+                </div>
+                <p>Dolly started her life as a single cell in a test tube taken from the mammary gland of a Finn Dorset sheep and an egg cell from a Scottish Blackface Sheep. Once normal development was confirmed in a lab at six days, the embryo was transferred into a surrogate mother. Dolly was then born on 5 July 1996 and named after the country western singer Dolly Parton.</p>
+                <button class="learnmore-button" onclick="window.location.href='https://www.nms.ac.uk/explore-our-collections/stories/natural-sciences/dolly-the-sheep/'">Know more about Dolly</button>
+            </div>
+            <div class="more-content-container" id="Tomatoes-Content">
+                <h2>Wild Tomatoes</h2>
+                <p>The tomato’s path from wild plant to household staple is much more complex than researchers have long thought. For many years, scientists believed that humans domesticated the tomato in two major phases. First, native people in South America cultivated blueberry-sized wild tomatoes about 7,000 years ago to breed a plant with a cherry-sized fruit. Later, people in Mesoamerica bred this intermediate group further to form the large cultivated tomatoes that we eat today.</p>
+                <div style="display:flex;flex-direction: column;flex-wrap: wrap;width: 300px;justify-content: center;align-items: center;text-align: justify;  margin: 30px 0px;">
+                    <img src="https://ozzyman.com/wp-content/uploads/2018/08/1-16.jpg" width="300" height="200" alt="Dolly">
+                    <h4 class="image-title" >A ripe one grown from one of Lincoln’s ripe ones compared to a modern one. Credit: Reddit/Mildly Interesting</h4>
+                </div>
+                <p>This research has direct implications for crop improvement. For example, some intermediate tomato groups have high levels of glucose, which makes the fruit sweeter. Breeders could use those plants to make cultivated tomatoes more attractive to consumers.</p>
+                <button class="learnmore-button" onclick="window.location.href='https://theconversation.com/modern-tomatoes-are-very-different-from-their-wild-ancestors-and-we-found-missing-links-in-their-evolution-130041'">Learn about wild tomatoes</button>
+            </div>
+            <div class="more-content-container" id="GrowthHormone-Content">
+                <h2>Synthetic Human Growth Hormone</h2>
+                <p>
+                    The U.S. Food and Drug Administration (FDA) has approved the synthetic form of HGH for the treatment of certain conditions. The synthetic form of HGH is available only by prescription and is injected.
+
+                    In children, healthcare providers prescribe HGH to treat:
+                <ul style="color:var(--text);font-size: 1vw;margin:30px 0px 30px 30px">
+                    <li>Growth hormone deficiency.</li>
+                    <li>Conditions that cause short stature, such as chronic kidney disease, Turner syndrome and Prader-Willi syndrome.</li>
+                </ul>
+                </p>
+                <!-- <img src="https://www.cancer.gov/sites/g/files/xnrzdm211/files/styles/cgov_article/public/cgov_image/media_image/2020-07/CRISPR-edited-T-Cell-Therapy-Infographic.jpg?itok=m9D31BB2" width="442" height="442" alt="GeneTherapy"> -->
+                <p>In the future, genetic therapies may be used to prevent, treat, or cure certain inherited disorders, such as cystic fibrosis, alpha-1 antitrypsin deficiency, hemophilia, beta thalassemia, and sickle cell disease. They also may be used to treat cancers or infections, including HIV.</p>
+            </div>
+            <div class="more-content-container" id="DarkCats-Content">
+                <h2>Glow-in-the-Dark Cats</h2>
+                <p>Cat owners might find a glow-in-the-dark kitty to be fairly useful—you’ll never trip over the cat at night again—but the Mayo Clinic scientists who created this glowing cat had a bigger goal in mind: fighting AIDS.</p>
+                <div style="display:flex;flex-direction: column;flex-wrap: wrap;width: 300px;justify-content: center;align-items: center;text-align: justify;  margin: 30px 0px;">
+                    <img src="https://ichef.bbci.co.uk/news/304/mcs/media/images/55305000/jpg/_55305878_image2faceclaws-1.jpg" width="275" height="350" alt="Dolly">
+                    <h4 class="image-title" >The Glow-In-The-Dark Kitty</h4>
+                </div>
+                <p>
+                    The substance that makes the cat glow is a version of the green fluorescent protein that lights up the crystal jelly, a type of jellyfish that lives off the West Coast of the United States.
+                </p>
+                <br>
+                <p>researchers have made many glowing animals, including pigs, mice, dogs, even fish you can buy in the pet store.</p>
+                <button class="learnmore-button" onclick="window.location.href='https://theweek.com/articles/464980/7-genetically-modified-animals-that-glow-dark'">Other glow in the dark animals</button>
+            </div>
+            <div class="more-content-container" id="GoldenRice-Content">
+                <h2>Golden Rice Project</h2>
+                <p>Golden rice is genetically modified to produce beta-carotene, which is not normally present in rice. Beta-carotene is converted into vitamin A when metabolized by the human body. We need vitamin A for healthier skin, immune systems, and vision.</p>
+                <div style="display:flex;flex-direction: column;flex-wrap: wrap;width: 300px;justify-content: center;align-items: center;text-align: justify;  margin: 30px 0px;">
+                    <img src="https://www.foodnavigator-asia.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/foodnavigator-asia.com/article/2018/01/03/foods-containing-gm-golden-rice-can-be-sold-in-australia-and-new-zealand/7699063-1-eng-GB/Foods-containing-GM-golden-rice-can-be-sold-in-Australia-and-New-Zealand.jpg" width="300" height="200" alt="Dolly">
+                    <!-- <h4 class="image-title" >The Glow-In-The-Dark Kitty</h4> -->
+                </div>
+                <p>
+                    Golden Rice is an enhanced version of ordinary rice designed to handle a specific nutrition issue, without any additional cost or difference in taste.
+                    <br><br>
+                    Currently, there is no cultivation or commercialisation of Golden Rice in India. However, a version of Golden Rice, called GR2E1 has got the necessary approvals related to its regulatory clearance in the Philippines and it is being cultivated in huge areas in that country.
+                </p>
+                <button class="learnmore-button" onclick="window.location.href='https://foreignpolicy.com/2019/10/17/golden-rice-genetically-modified-superfood-almost-saved-millions/'">The True Story of the Genetically Modified Superfood That Almost Saved Millions</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>
