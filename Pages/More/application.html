@@ -44,8 +44,11 @@
         </div>
     </div>
     <div id="screen-container">
-        <div class="content-seperator" id="content-selector-container">
-            <h1 id="Application-more">The Application <span class="sub-sub-heading">of genetics</span></h1> 
+        <div class="content-seperator" id="content-selector-container" style="width: 40vw;">
+            <div style="display: flex;flex-direction: column;">
+                <h1 id="Application-more">The Application</h1>
+                <span class="sub-sub-heading">of genetics</span>
+            </div>
             <div id="selection-container">
                 <h3 class="selection" id="GeneTherapy-Selector" onclick="switchContent('GeneTherapy-Content','GeneTherapy-Selector')">1. Gene therapy</h3>
                 <h3 class="selection" id="EdibleVaccines-Selector" onclick="switchContent('EdibleVaccines-Content','EdibleVaccines-Selector')">2. Production of edible vaccines</h3>
@@ -54,35 +57,64 @@
                 <h3 class="selection" id="Cloning-Selector" onclick="switchContent('Cloning-Content','Cloning-Selector')">5. Cloning</h3>
             </div>
         </div>
-        <div class="content-seperator" id="more-content">
+        <div class="content-seperator" id="more-content"  style="width: 60vw;">
             <div class="more-content-container more-content-show" id="GeneTherapy-Content">
                 <h2>Gene therapy</h2>
                 <p>Genetic Therapies are approaches that treat genetic disorders by providing new DNA to certain cells or correcting the DNA. Gene transfer approaches, also called gene addition, restore the missing function of a faulty or missing gene by adding a new gene to affected cells.</p>
                 <img src="/Assets/Images/GeneTherapy.png" width="442" height="149" alt="GeneTherapy">
                 <p>In the future, genetic therapies may be used to prevent, treat, or cure certain inherited disorders, such as cystic fibrosis, alpha-1 antitrypsin deficiency, hemophilia, beta thalassemia, and sickle cell disease. They also may be used to treat cancers or infections, including HIV.</p>
+                <button class="learnmore-button" onclick="window.location.href='https://www.mayoclinic.org/tests-procedures/gene-therapy/about/pac-20384619?sscid=91k7_2any3&'">Know about Gene Therapy</button>
             </div>
             <div class="more-content-container" id="EdibleVaccines-Content">
                 <h2>Production of edible vaccines</h2>
                 <p>All vaccines are genetically modified in a way. A gene may be programmed to produce an antiviral protein in a bacterial cell. Once sealed into the DNA, the bacteria is now effectively re-programmed to replicate this new antiviral protein.</p>
-                <iframe width="372.6" height="210" style="align-self: center; margin: 40px 0px;" src="https://www.youtube.com/embed/zBkVCpbNnkU"></iframe>
+                <div style="display:flex;flex-direction: row; justify-content: space-between; margin: 30px 0px;">
+                    <iframe width="372.6" height="210" style="align-self: center; margin: 40px 0px;" src="https://www.youtube.com/embed/zBkVCpbNnkU"></iframe>
+                    <div style="display:flex;flex-direction: column;flex-wrap: wrap;width: 300px;justify-content: center;align-items: center;text-align: justify;  margin: 30px 0px; margin-left: 40px;">
+                        <img src="https://www.researchgate.net/profile/Jayaraman-Rajangam/publication/345015165/figure/fig2/AS:952384104706050@1604077473391/Preparation-of-edible-vaccine.png" width="440" height="300" alt="Dolly">
+                    </div>
+                </div>
+                <p>Creating edible vaccines involves the genetic engineering approach for the introduction of selected desired genes into plants and then inducing these altered plants to manufacture the encoded proteins. This process is known as “transformation” and the plants altered with new characteristics are called “transgenic plants”. </p>
             </div>
             <div class="more-content-container" id="CureCancer-Content">
                 <h2>Cure for Cancer</h2>
-                <p>In conclusion, CRISPR/Cas9 is a novel tool for genome editing that is now established in the preclinical space as an effective strategy for the treatment of cancer and many other diseases. Phase 1 and 2 trials are ongoing to expand its clinical applications.</p>
-                <!-- <img src="https://www.cancer.gov/sites/g/files/xnrzdm211/files/styles/cgov_article/public/cgov_image/media_image/2020-07/CRISPR-edited-T-Cell-Therapy-Infographic.jpg?itok=m9D31BB2" width="442" height="442" alt="GeneTherapy"> -->
-                <p>In the future, genetic therapies may be used to prevent, treat, or cure certain inherited disorders, such as cystic fibrosis, alpha-1 antitrypsin deficiency, hemophilia, beta thalassemia, and sickle cell disease. They also may be used to treat cancers or infections, including HIV.</p>
+                <p>The idea here is generally to take immune cells from a person with cancer, edit them to be better at attacking the cancer and replace them in the body.</p>
+                <div style="display:flex;flex-direction: column;flex-wrap: wrap;width: 300px;justify-content: center;align-items: center;text-align: justify;  margin: 30px 0px;">
+                    <img src="https://blog.dana-farber.org/insight/wp-content/uploads/2018/04/CAR-T-Cell-Attack-Art.jpg" width="450" height="275" alt="Dolly">
+                    <h4 class="image-title" >Gene therapy is a way of treating or preventing disease by altering the genetic instructions within an individual’s cells.</h4>
+                </div>
+                <p>With the power of genetics we can programme Killer T cell to be more active and make them active cancer hunters, This will help eradicate cancer from once body.</p>
             </div>
             <div class="more-content-container" id="GMO-Content">
                 <h2>Develop GMO crops</h2>
-                <p>Genetic Therapies are approaches that treat genetic disorders by providing new DNA to certain cells or correcting the DNA. Gene transfer approaches, also called gene addition, restore the missing function of a faulty or missing gene by adding a new gene to affected cells.</p>
-                <img src="/Assets/Images/GeneTherapy.png" width="442" height="149" alt="GeneTherapy">
-                <p>In the future, genetic therapies may be used to prevent, treat, or cure certain inherited disorders, such as cystic fibrosis, alpha-1 antitrypsin deficiency, hemophilia, beta thalassemia, and sickle cell disease. They also may be used to treat cancers or infections, including HIV.</p>
+                <p>
+                    Most of the GMO crops grown today were developed to help farmers prevent crop loss. The three most common traits found in GMO crops are:
+                    
+                </p>
+                <div style="display:flex;flex-direction: column;flex-wrap: wrap;width: 300px;justify-content: center;align-items: center;text-align: justify;  margin: 30px 0px;">
+                    <img src="https://static.scientificamerican.com/sciam/cache/file/058F72AE-0A48-4578-9767873AAA8A5771_source.jpg?w=590&h=800&4DAFC09C-C496-4E65-9AD586414BC25622" width="450" height="275" alt="Dolly">
+                </div>
+                <p>
+                    For GMO crops that are resistant to insect damage, farmers can apply fewer spray pesticides to protect the crops. GMO crops that are tolerant to herbicides help farmers control weeds without damaging the crops.
+                    <ul style="color:var(--text);font-size: 1.3vw;margin:30px 0px 30px 30px">
+                        <li>Resistance to insect damage</li>
+                        <li>Tolerance to herbicides</li>
+                        <li>Resistance to plant viruses</li>
+                    </ul>
+                </p>
             </div>
             <div class="more-content-container" id="Cloning-Content">
                 <h2>Cloning</h2>
-                <p>Cloning is a technique scientists use to make exact genetic copies of living things. Genes, cells, tissues, and even whole animals can all be cloned.</p>
-                <img src="/Assets/Images/GeneTherapy.png" width="442" height="149" alt="GeneTherapy">
-                <p>In the future, genetic therapies may be used to prevent, treat, or cure certain inherited disorders, such as cystic fibrosis, alpha-1 antitrypsin deficiency, hemophilia, beta thalassemia, and sickle cell disease. They also may be used to treat cancers or infections, including HIV.</p>
+                <p>
+                    Cloning allows for the creation of multiple copies of genes, expression of genes, and study of specific genes. To get the DNA fragment into a bacterial cell in a form that will be copied or expressed, the fragment is first inserted into a plasmid.
+                </p>
+                <div style="display:flex;flex-direction: column;flex-wrap: wrap;width: 300px;justify-content: center;align-items: center;text-align: justify;  margin: 30px 0px;">
+                    <img src="https://images.nationalgeographic.org/image/upload/t_edhub_resource_key_image/v1638892031/EducationHub/photos/cloned-beagles.jpg" width="450" height="275" alt="Dolly">
+                </div>
+                <p>
+                    In 1996, Scottish scientists cloned the first animal, a sheep they named Dolly. She was cloned using an udder cell taken from an adult sheep. Since then, scientists have cloned cows, cats, deer, horses, and rabbits.
+                </p>
+                <button class="learnmore-button" onclick="window.location.href='./stories.html'">Learn more about Dolly</button>
             </div>
         </div>
         <!-- <iframe width="559" height="315" style="align-self: center; margin: 40px 0px;" src="https://www.youtube.com/embed/DIM38NlkWEo"></iframe> -->

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Styles/common.css">
     <link rel="stylesheet" href="/Styles/more.css">
-    <!-- <link rel="stylesheet" href="/Styles/about.css"> -->
 
     <script src="/Scripts/more-content.js"></script>
     
@@ -35,86 +34,101 @@
         </div>
     </div>
     <div id="screen-container">
-        <div class="content-seperator" id="content-selector-container">
-            <h1 id="Application-more">Success Stories <span class="sub-sub-heading"></span></h1>
+        <div class="content-seperator" id="content-selector-container" style="width: 40vw;">
+            <div style="display: flex;flex-direction: column;">
+                <h1 id="Application-more">The Risk Involved </h1>
+                <span class="sub-sub-heading">in Genetic Engineering</span>
+            </div>
             <div id="selection-container">
-                <h3 class="selection" id="Dolly-Selector" onclick="switchContent('Dolly-Content','Dolly-Selector')">1. Cloning (Dolly)</h3>
-                <h3 class="selection" id="Tomatoes-Selector" onclick="switchContent('Tomatoes-Content','Tomatoes-Selector')">2. Wild Tomatoes</h3>
-                <h3 class="selection" id="GrowthHormone-Selector" onclick="switchContent('GrowthHormone-Content','GrowthHormone-Selector')">3. Synthetic Human Growth Hormone</h3>
-                <h3 class="selection" id="DarkCats-Selector" onclick="switchContent('DarkCats-Content','DarkCats-Selector')">4. Glow-in-the-Dark Cats</h3>
-                <h3 class="selection" id="GoldenRice-Selector" onclick="switchContent('GoldenRice-Content','GoldenRice-Selector')">5. Golden Rice</h3>
+                <h3 class="selection" id="Environmental-Selector" onclick="switchContent('Environmental-Content','Environmental-Selector')">1. Environmental Impact</h3>
+                <h3 class="selection" id="HealthRisks-Selector" onclick="switchContent('HealthRisks-Content','HealthRisks-Selector')">2. Health Risks</h3>
+                <h3 class="selection" id="GeneticDiversity-Selector" onclick="switchContent('GeneticDiversity-Content','GeneticDiversity-Selector')">3. Genetic Diversity Reduction</h3>
+                <h3 class="selection" id="Socioeconomic-Selector" onclick="switchContent('Socioeconomic-Content','Socioeconomic-Selector')">4. Socioeconomic Issues</h3>
+                <h3 class="selection" id="GeneFlow-Selector" onclick="switchContent('GeneFlow-Content','GeneFlow-Selector')">5. Gene Flow</h3>
+                <h3 class="selection" id="PublicTrust-Selector" onclick="switchContent('PublicTrust-Content','PublicTrust-Selector')">6. Lack of Public Trust </h3>
             </div>
         </div>
-        <div class="content-seperator" id="more-content">
-            <div class="more-content-container more-content-show" id="Dolly-Content">
-                <h2>Cloning (Dolly)</h2>
-                <p>Dolly was important because she was the first mammal to be cloned from an adult cell. Her birth proved that specialised cells could be used to create an exact copy of the animal they came from.</p>
-                <div style="display:flex;justify-content: space-between; margin: 30px 0px;">
-                    <div style="display:flex;flex-direction: column;flex-wrap: wrap;width: 300px;justify-content: center;align-items: center;text-align: justify;">
-                        <img src="https://www.nms.ac.uk/media/1164110/dolly-and-surrogate-mother_0.jpg" width="200" height="200" alt="Dolly">
-                        <h4 class="image-title" >Dolly as a lamb with her Scottish Blackface surrogate mother. Photo courtesy of the Roslin Institute, University of Edinburgh, UK.</h4>
-                    </div>
-                    <div style="display:flex;flex-direction: column;flex-wrap: wrap;width: 300px;justify-content: center;align-items: center;text-align: justify;margin-left: 50px;">
-                        <img src="https://www.nms.ac.uk/media/1164113/profianwilmutdolly.jpg" width="300" height="200" alt="Dolly">
-                        <h4 class="image-title" >Dolly with Professor Sir Ian Wilmut, who led the research which produced her. Photo courtesy of the Roslin Institute, University of Edinburgh, UK.</h4>
+        <div class="content-seperator" id="more-content"  style="width: 60vw;">
+            <div class="more-content-container more-content-show" id="Environmental-Content">
+                <h2>Environmental Impact</h2>
+                <p>Genetically modified organisms (GMOs) released into the environment can 
+                    potentially interact with native species, leading to ecological disruption. </p>
+                <img src="https://geneticliteracyproject.org/wp-content/uploads/elementor/thumbs/gmo-means-definition-pe4viouo27oym1sktv73uate3y6u1njep83k1dr2w8.jpg" width="442" height="230" alt="GeneTherapy">
+                <p>For example, GMO crops may crossbreed with wild relatives, creating hybrid plants 
+                    that have unpredictable characteristics.</p>
+                <button class="learnmore-button" onclick="window.location.href='https://www.mayoclinic.org/tests-procedures/gene-therapy/about/pac-20384619?sscid=91k7_2any3&'">Know about Gene Therapy</button>
+            </div>
+            <div class="more-content-container" id="HealthRisks-Content">
+                <h2>Health Risks</h2>
+                <p>There is concern about the potential health risks associated with consuming 
+                    GMOs. While extensive safety testing is conducted, some worry about long-term 
+                    effects on human health, including allergenicity and unintended side effects. </p>
+                <div style="display:flex;flex-direction: row; justify-content: space-between; margin: 30px 0px;">
+                    <div style="display:flex;flex-direction: column;flex-wrap: wrap;width: 300px;justify-content: center;align-items: center;text-align: justify;  margin: 30px 0px; margin-left: 40px;">
+                        <img src="/Assets/Images/Risks.jpeg" width="470" height="300" alt="Dolly">
                     </div>
                 </div>
-                <p>Dolly started her life as a single cell in a test tube taken from the mammary gland of a Finn Dorset sheep and an egg cell from a Scottish Blackface Sheep. Once normal development was confirmed in a lab at six days, the embryo was transferred into a surrogate mother. Dolly was then born on 5 July 1996 and named after the country western singer Dolly Parton.</p>
-                <button class="learnmore-button" onclick="window.location.href='https://www.nms.ac.uk/explore-our-collections/stories/natural-sciences/dolly-the-sheep/'">Know more about Dolly</button>
-            </div>
-            <div class="more-content-container" id="Tomatoes-Content">
-                <h2>Wild Tomatoes</h2>
-                <p>The tomato’s path from wild plant to household staple is much more complex than researchers have long thought. For many years, scientists believed that humans domesticated the tomato in two major phases. First, native people in South America cultivated blueberry-sized wild tomatoes about 7,000 years ago to breed a plant with a cherry-sized fruit. Later, people in Mesoamerica bred this intermediate group further to form the large cultivated tomatoes that we eat today.</p>
-                <div style="display:flex;flex-direction: column;flex-wrap: wrap;width: 300px;justify-content: center;align-items: center;text-align: justify;  margin: 30px 0px;">
-                    <img src="https://ozzyman.com/wp-content/uploads/2018/08/1-16.jpg" width="300" height="200" alt="Dolly">
-                    <h4 class="image-title" >A ripe one grown from one of Lincoln’s ripe ones compared to a modern one. Credit: Reddit/Mildly Interesting</h4>
-                </div>
-                <p>This research has direct implications for crop improvement. For example, some intermediate tomato groups have high levels of glucose, which makes the fruit sweeter. Breeders could use those plants to make cultivated tomatoes more attractive to consumers.</p>
-                <button class="learnmore-button" onclick="window.location.href='https://theconversation.com/modern-tomatoes-are-very-different-from-their-wild-ancestors-and-we-found-missing-links-in-their-evolution-130041'">Learn about wild tomatoes</button>
-            </div>
-            <div class="more-content-container" id="GrowthHormone-Content">
-                <h2>Synthetic Human Growth Hormone</h2>
-                <p>
-                    The U.S. Food and Drug Administration (FDA) has approved the synthetic form of HGH for the treatment of certain conditions. The synthetic form of HGH is available only by prescription and is injected.
+                <p>The first is that genetic engineering can transfer allergens from foods to which people know they are allergic, to foods that they think are safe.</p>
 
-                    In children, healthcare providers prescribe HGH to treat:
-                <ul style="color:var(--text);font-size: 1vw;margin:30px 0px 30px 30px">
-                    <li>Growth hormone deficiency.</li>
-                    <li>Conditions that cause short stature, such as chronic kidney disease, Turner syndrome and Prader-Willi syndrome.</li>
-                </ul>
-                </p>
-                <!-- <img src="https://www.cancer.gov/sites/g/files/xnrzdm211/files/styles/cgov_article/public/cgov_image/media_image/2020-07/CRISPR-edited-T-Cell-Therapy-Infographic.jpg?itok=m9D31BB2" width="442" height="442" alt="GeneTherapy"> -->
-                <p>In the future, genetic therapies may be used to prevent, treat, or cure certain inherited disorders, such as cystic fibrosis, alpha-1 antitrypsin deficiency, hemophilia, beta thalassemia, and sickle cell disease. They also may be used to treat cancers or infections, including HIV.</p>
             </div>
-            <div class="more-content-container" id="DarkCats-Content">
-                <h2>Glow-in-the-Dark Cats</h2>
-                <p>Cat owners might find a glow-in-the-dark kitty to be fairly useful—you’ll never trip over the cat at night again—but the Mayo Clinic scientists who created this glowing cat had a bigger goal in mind: fighting AIDS.</p>
+            <div class="more-content-container" id="GeneticDiversity-Content">
+                <h2>Genetic Diversity Reduction</h2>
+                <p>The widespread adoption of genetically modified crops could reduce genetic 
+                    diversity within crop species. This reduced diversity may make crops more 
+                    susceptible to diseases, pests, and environmental changes. 
+                    </p>
                 <div style="display:flex;flex-direction: column;flex-wrap: wrap;width: 300px;justify-content: center;align-items: center;text-align: justify;  margin: 30px 0px;">
-                    <img src="https://ichef.bbci.co.uk/news/304/mcs/media/images/55305000/jpg/_55305878_image2faceclaws-1.jpg" width="275" height="350" alt="Dolly">
-                    <h4 class="image-title" >The Glow-In-The-Dark Kitty</h4>
+                    <img src="https://www.frontiersin.org/files/Articles/656168/frym-09-656168-HTML-r1/image_m/figure-2.jpg" width="250" height="400" alt="Dolly">
+                    <h4 class="image-title" >Gene therapy is a way of treating or preventing disease by altering the genetic instructions within an individual’s cells.</h4>
+                </div>
+                <p>Low genetic diversity means that there is a limited variety of alleles for genes within that species and so there are not many differences between individuals.</p>
+            </div>
+            <div class="more-content-container" id="Socioeconomic-Content">
+                <h2>Socioeconomic Issues</h2>
+                <p>
+                    Genetic engineering can be expensive, potentially leading to increased inequality in access to its benefits. Small farmers and developing countries may be at a disadvantage if they cannot afford genetically modified seeds or technologies
+                    
+                </p>
+                <br><br>
+                <!-- <div style="display:flex;flex-direction: column;flex-wrap: wrap;width: 300px;justify-content: center;align-items: center;text-align: justify;  margin: 30px 0px;">
+                    <img src="https://static.scientificamerican.com/sciam/cache/file/058F72AE-0A48-4578-9767873AAA8A5771_source.jpg?w=590&h=800&4DAFC09C-C496-4E65-9AD586414BC25622" width="450" height="275" alt="Dolly">
+                </div> -->
+                <p>
+                    Adoption of GMOs into seed markets could lead to farmer dependence on corporations that control the price and supply of seeds. The cost of switching from traditional to genetically modified seeds could also lead to increased inequality among farmers, as poorer smallholders will be left behind by their competitors.
+                </p>
+            </div>
+            <div class="more-content-container" id="GeneFlow-Content">
+                <h2></h2>
+                <p>
+                    Genetic modifications can potentially spread to related species through natural 
+processes like pollination and reproduction. This gene flow can lead to the 
+unintentional alteration of non-target organisms. 
+                </p>
+                <div style="display:flex;flex-direction: column;flex-wrap: wrap;width: 300px;justify-content: center;align-items: center;text-align: justify;  margin: 30px 0px;">
+                    <img src="https://ib.bioninja.com.au/_Media/species-diversification_med.jpeg" width="450" height="275" alt="Dolly">
                 </div>
                 <p>
-                    The substance that makes the cat glow is a version of the green fluorescent protein that lights up the crystal jelly, a type of jellyfish that lives off the West Coast of the United States.
+                    Gene flow is the transfer of genetic material from one population to another. Gene flow can take place between two populations of the same species through migration, and is mediated by reproduction and vertical gene transfer from parent to offspring.
                 </p>
-                <br>
-                <p>researchers have made many glowing animals, including pigs, mice, dogs, even fish you can buy in the pet store.</p>
-                <button class="learnmore-button" onclick="window.location.href='https://theweek.com/articles/464980/7-genetically-modified-animals-that-glow-dark'">Other glow in the dark animals</button>
+                <button class="learnmore-button" onclick="window.location.href='./stories.html'">Learn more about Dolly</button>
             </div>
-            <div class="more-content-container" id="GoldenRice-Content">
-                <h2>Golden Rice Project</h2>
-                <p>Golden rice is genetically modified to produce beta-carotene, which is not normally present in rice. Beta-carotene is converted into vitamin A when metabolized by the human body. We need vitamin A for healthier skin, immune systems, and vision.</p>
+            <div class="more-content-container" id="PublicTrust-Content">
+                <h2>Lack of Public Trust</h2>
+                <p>
+                    Some segments of the public have concerns about the transparency and 
+                    trustworthiness of companies and regulatory agencies involved in genetic 
+                    engineering, leading to skepticism and opposition to GMOs.T
+                </p>
                 <div style="display:flex;flex-direction: column;flex-wrap: wrap;width: 300px;justify-content: center;align-items: center;text-align: justify;  margin: 30px 0px;">
-                    <img src="https://www.foodnavigator-asia.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/foodnavigator-asia.com/article/2018/01/03/foods-containing-gm-golden-rice-can-be-sold-in-australia-and-new-zealand/7699063-1-eng-GB/Foods-containing-GM-golden-rice-can-be-sold-in-Australia-and-New-Zealand.jpg" width="300" height="200" alt="Dolly">
-                    <!-- <h4 class="image-title" >The Glow-In-The-Dark Kitty</h4> -->
+                    <img src="https://geneticliteracyproject.org/wp-content/uploads/2022/05/mkcleargov-.jpg" width="450" height="275" alt="Dolly">
                 </div>
                 <p>
-                    Golden Rice is an enhanced version of ordinary rice designed to handle a specific nutrition issue, without any additional cost or difference in taste.
-                    <br><br>
-                    Currently, there is no cultivation or commercialisation of Golden Rice in India. However, a version of Golden Rice, called GR2E1 has got the necessary approvals related to its regulatory clearance in the Philippines and it is being cultivated in huge areas in that country.
+                    While 46% of people indicated that they agreed with the statement that 'genome editing in general carries too many risks to be used to tackle global challenges', the public is very positive about its use in specific areas such as human health
                 </p>
-                <button class="learnmore-button" onclick="window.location.href='https://foreignpolicy.com/2019/10/17/golden-rice-genetically-modified-superfood-almost-saved-millions/'">The True Story of the Genetically Modified Superfood That Almost Saved Millions</button>
+                <button class="learnmore-button" onclick="window.location.href='./stories.html'">Learn more about Dolly</button>
             </div>
         </div>
+        <!-- <iframe width="559" height="315" style="align-self: center; margin: 40px 0px;" src="https://www.youtube.com/embed/DIM38NlkWEo"></iframe> -->
     </div>
 </body>
 </html>

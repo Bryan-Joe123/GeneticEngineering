@@ -53,7 +53,8 @@ h1,.heading{
     color: var(--orange);
     font-size: 4vw;
 
-    margin-bottom: 10px;
+    padding: 0;
+    /*margin-bottom: 10px;*/
 
     text-align: left;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -63,20 +64,14 @@ h2,.sub-heading{
     color: var(--orange);
     font-size: 3vw;
     margin-bottom:20px;
-    text-align: center;
-    align-self: center;
-
-    text-align: left;
     font-family: 'ADLaM Display',cursive;
 }
 
-h3,.sub-sub-heading{
+.sub-sub-heading{
     color: var(--light-orange);
     font-size: 1.7vw;
 
-    margin-left: -15px;
-
-    text-align: left;
+    text-align: right;
     font-family: 'Varela Round', sans-serif;
 }
 
@@ -122,6 +117,7 @@ ol{
     color: var(--light-text);
     font-size: 1.5vw;
     font-weight: 600;
+    font-family: 'Varela Round', sans-serif;
 }
 
 .selection:hover{
@@ -154,10 +150,12 @@ ol{
 .image-title{
     color: var(--light-text);
     margin-top:5px;
+    font-size: 0.8vw;
+    font-family: 'Varela Round', sans-serif;
 }
 
 .learnmore-button{
-    margin-top: 40px;
+    margin-top: 20px;
     padding: 7px 20px;
     font-size: 1.2vw;
     align-self: center;

@@ -1,51 +1,14 @@
-<div class="content-seperator">
-            <h1 id="Application-more">The Application <span class="sub-sub-heading">of genetic engineering</span></h1> 
-            <div class="more-dropdown">
-                <span class="key">1. Ethical Concerns</span>
-                <div class="more-dropdown-content">
-                    Genetic engineering raises ethical questions about playing with the fundamental building blocks of life. There are concerns about the unintended consequences of manipulating genes and creating organisms with specific traits, potentially leading to unforeseen negative impacts on ecosystems or the organisms themselves.
-                </div>
-            </div>
-            <div class="more-dropdown">
-                <span class="key">2. Unintended Consequences</span>
-                <div class="more-dropdown-content">
-                    Genetic modifications can have unintended effects on an organism's physiology, behavior, or interactions with its environment. These unintended consequences might not become apparent until after the modified organisms are released into the wild or used extensively in agriculture.
-                </div>
-            </div>
-            <div class="more-dropdown">
-                <span class="key">3. Health Risks</span>
-                <div class="more-dropdown-content">
-                    There are concerns about the potential health risks associated with consuming genetically modified foods. While regulatory bodies generally approve GMOs for consumption, long-term effects on human health are still a subject of ongoing research and debate.
-                </div>
-            </div>
-            <div class="more-dropdown">
-                <span class="key">4. Resistance and Adaptation</span>
-                <div class="more-dropdown-content">
-                    Pests and pathogens could potentially evolve and develop resistance to genetically modified crops designed to resist them. This could lead to the emergence of superbugs or superweeds that are difficult to control and could have broader ecological implications.
-                </div>
-            </div>
-            <div class="more-dropdown">
-                <span class="key">5. Unpredictable Gene Flow</span>
-                <div class="more-dropdown-content">
-                    Genes from genetically modified organisms can potentially spread to wild relatives through crossbreeding, leading to unintended genetic changes in natural populations. This gene flow could have ecological and evolutionary consequences.
-                </div>
-            </div>
-            <div class="more-dropdown">
-                <span class="key">6. Social and Economic Impacts</span>
-                <div class="more-dropdown-content">
-                    Genetic engineering could exacerbate socio-economic inequalities. If certain genetically modified crops or technologies become dominant, traditional agricultural practices and local knowledge might be devalued, impacting the livelihoods of local communities.
-                </div>
-            </div>
-            <div class="more-dropdown">
-                <span class="key">7. Regulatory Challenges</span>
-                <div class="more-dropdown-content">
-                    Developing and enforcing regulations for genetic engineering can be complex and challenging. Ensuring that GMOs are safe for both human health and the environment requires robust oversight and testing procedures.
-                </div>
-            </div>
-            <div class="more-dropdown">
-                <span class="key">8. Allergenicity</span>
-                <div class="more-dropdown-content">
-                    Genetic engineering could introduce new allergens or increase the allergenic potential of certain foods. This could pose risks to individuals with allergies who consume genetically modified products unknowingly.
-                </div>
-            </div>
-        </div>
+Human Gene Bank
+
+A human gene bank collects, stores, and preserves genetic material from individuals for research and medical purposes, enabling researchers to study disease genetics and develop personalized medicine approaches.
+
+Human Genome Bank
+The Human Genome Bank is a collection of DNA samples from voluntary donors, preserving genetic diversity for scientific research. It aids in understanding human evolution, population migration, and genetic diversity, while ensuring donor confidentiality and privacy.
+
+
+Genetic in Organ Transplants
+
+Genetics significantly impacts organ transplantation, affecting compatibility, risk of rejection, effectiveness of immunosuppressive treatments, and long-term outcomes. Understanding these factors is crucial for optimizing compatibility assessment, minimizing rejection risks, tailoring treatments, and enhancing patient care.
+
+Gene Manipulation Before Birth 
+Genetically altered embryos can be achieved by introducing the desired genetic material into the embryo itself, or into the sperm and/or egg cells of the parents; either by delivering the desired genes directly into the cell or using gene-editing technology.
