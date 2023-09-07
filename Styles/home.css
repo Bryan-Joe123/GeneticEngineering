@@ -104,6 +104,8 @@ body{
     height: 100vh;
     background-color: black;
 
+    /* z-index:-500; */
+
     background-image: url("../Assets/background-dark.jpg");
     background-color: #000000cc;
     background-position: center;
@@ -192,6 +194,11 @@ body{
         transform: scale(100%) rotate(360deg);
     }
 }
+
+/* .list-image{
+    outline: solid white;
+    border:solid white 3px;
+} */
 
 #big-text-container{
     display: flex;
@@ -282,6 +289,102 @@ body{
 #front-learnmore-button:active {
     background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
 }
+
+.image-container{
+    display: flex;
+    flex-direction: row;
+
+    z-index: 300;
+
+    
+
+    gap: 100px;
+    /* width: 200%; */
+}
+
+.image-item{
+    transition: all 0.3s;
+}
+
+.image-item:hover{
+    transform:scale(110%);
+}
+
+.image-item-background{
+    height: calc(100% - 2vw);
+    width: calc(100% - 2vw);
+    transition: all 0.2s;
+
+    padding: 1vw;
+    flex-wrap: wrap;
+
+    display:flex;
+    flex-direction: column;
+
+    filter: opacity(0%);
+}
+
+.image-item-background:hover{
+    /* transform:scale(120%); */
+    background-color: rgba(0, 0, 0, 0.7);
+    filter: opacity(100%);
+}
+
+
+.image-item-background>h4{
+    color: var(--contrast);
+    font-size: 2vw;
+    font-family: monospace;
+
+    filter: opacity(0%);
+
+    transition: all 0.8s;
+}
+
+.image-item-background:hover h4{
+    filter: opacity(100%);
+}
+
+.image-item-background>h4:hover{
+    font-size: 2.1vw;
+}
+
+.image-item-background>p{
+    color: var(--text);
+    font-size: 1vw;
+    filter: opacity(0%);
+    transition: all 1s;
+}
+
+.image-item-background:hover p{
+    filter: opacity(100%);
+}
+
+.image-item{
+    background-image:url('https://as2.ftcdn.net/v2/jpg/01/15/52/31/1000_F_115523122_e4ry4EKsouP9kl2auNN1wSREoJq3kdcE.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 20vw;
+}
+
+/* .image-item:hover .image-item-background{
+    filter: blur(3px) saturate(0%) opacity(30%); 
+} */
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+  
+/* .image-scroll-item:nth-child(odd){
+    background-image: url('https://images.unsplash.com/photo-1489183988443-b37b7e119ba6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80')
+} */
+
 
 /* #myVideo {
     z-index:-22;

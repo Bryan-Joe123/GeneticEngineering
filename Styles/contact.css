@@ -81,8 +81,10 @@ body{
     width:2.3vw;
     filter: invert(100%);
     margin-left: 10px;
+    transition: all 0.2s;
 }
 
 .social:hover{
     filter: invert(100%) opacity(50%);
+    transform: scale(95%);
 }

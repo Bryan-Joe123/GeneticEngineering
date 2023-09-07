@@ -152,6 +152,7 @@ ol{
     margin-top:5px;
     font-size: 0.8vw;
     font-family: 'Varela Round', sans-serif;
+
 }
 
 .learnmore-button{
@@ -173,4 +174,12 @@ ol{
 .learnmore-button:hover{
     background-color: transparent;
     color: var(--orange);
+}
+
+.images{
+    transition: all 0.3s;
+}
+
+.images:hover{
+    scale: 120%;
 }
