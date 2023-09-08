@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="../Styles/home.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-deferred@2.0.0/dist/chartjs-plugin-deferred.min.js"></script>
-    <title>Home</title>
-    <link rel="icon" type="image/x-icon" href="/Assets/Favicon.png"> 
+    <title>DNA</title>
+    <link rel="icon" type="image/x-icon" href="/Assets/Favicon.png">
     <script src="../Scripts/scroll.js"></script>
 
 </head>
 
-<body>
+<body  class="no-scroll-body" style="overflow-x: hidden;">
     <!-- <video autoplay muted loop id="myVideo">
         <source src="../Assets/background.mp4" type="video/mp4">
     </video> -->
@@ -43,7 +43,7 @@
             <div id="front-title-container">
                 <h1>Genetic Engineering</h1>
                 <h3>in Health care</h3>
-                <p>The <b>future</b> of <b>health care</b> and <b>gene modification</b> is Here</p>
+                <p id="scroll-text">The <b>Future</b> of <b>Health care</b> and <b>Gene modification</b> is here<b>!!</b></p>
                 <button id="front-learnmore-button" onclick="window.location = '#GeneEng-main'">Learn More</button>
             </div>
             <h5>➤</h5>
@@ -162,7 +162,7 @@
     <div class="screen-container">
         <div class="content-seperator" style="display:flex; justify-content: center; align-items: center; padding: 40px 80px;">
             <h1>Hopes</h1>
-            <h3>for genetic testing</h3>7
+            <h3>for genetic testing</h3>
             <div style="display:flex;align-items: center;">
                 <img class="list-image" src="../Assets/Images/listimage/section6-list-item1.png" alt="e" height="70vw" width="70vw">
                 <span class="list-item">If you know you have a <span class="white">genetic disorder</span>, you might be able to get <span class="white">suitable treatment</span>, or act in a way that will reduce the chance of the <span class="white">disease developing</span>.</span>
@@ -178,12 +178,12 @@
                 <span class="list-item">Even if there is <span class="white">no treatment</span>, accessing information about your future health can help you make decisions about your <span class="white">future</span>, including whether or not to have <span class="white">children</span>.</span>
             </div>
         </div>
-        <div class="content-seperator" style="display:flex; justify-content: center; align-items: center;padding: 40px 80px;">
+        <div class="content-seperator" style="display:flex; justify-content: center; align-items: center; padding: 40px 80px;">
             <h1>Concerns</h1>
             <h3>about genetic testing</h3>
             <div style="display:flex;align-items: center;">
                 <img class="list-image" src="../Assets/Images/listimage/section6-list-item4.png" alt="e" height="70vw" width="70vw">
-                <span class="list-item">If your genetic data became available to <span class="white">third parties</span>, such as <span class="white">insurance</span> providers, they might offer you a <span class="white">reduced</span> level of service as a result.</span>
+                <span class="list-item">If your genetic data became available to <span class="white">third parties</span>, such as <span class="white">insurance</span> providers, they might offer you a <span class="white">reduced</span> level of service as a result. This can affect the <span class="white">services provided</span>.</span>
             </div>
             <br><br>
             <div style="display:flex;align-items: center;">
@@ -193,7 +193,7 @@
             <br><br>
             <div style="display:flex;align-items: center;">
                 <img class="list-image" src="../Assets/Images/listimage/section6-list-item6.png" alt="e" height="70vw" width="70vw">
-                <span class="list-item">Being told that you or a <span class="white">family member</span> is at risk of a <span class="white">genetic disorder</span> can affect <span class="white">relationships</span> and cause <span class="white">anxiety</span>.</span>
+                <span class="list-item">Being told that you or a <span class="white">family member</span> is at risk of a <span class="white">genetic disorder</span> can affect <span class="white">relationships</span> and cause <span class="white">anxiety</span>. This will affect the <span class="white">relationship</span> between the <span class="white">family members</span></span>
             </div>           
             
             <!-- <button class="learnmore-button" onclick="window.location = './More/crispr.html'">Learn More</button>        -->
@@ -266,9 +266,17 @@
             <button class="learnmore-button" onclick="window.location = 'https://genetics-gsa.org/donate/'" style="transform: scale(120%);">Donate Now</button>
         </div>
     </div> -->
+    <!-- <hr> -->
     <div class="screen-container">
-        <div class="content-seperator" style="display:flex; justify-content: center; align-items: center;">
+        <!-- <div class="content-seperator" id="yellow-background" style="overflow: hidden"> -->
+        <div class="content-seperator">
+
             <img src="../Assets/Images/lab.png" alt="">
+            <!-- <div style="display: flex;flex-direction: column;align-items: center;">
+                <h1 class="green-text">Web Page</h1>
+                <h1 class="green-text" style="animation-delay:0.1s;">Show Down</h1>
+            </div>
+            <button class="learnmore-green-button" onclick="window.location = '#cover'">Learn More</button> -->
         </div>
         
         <div class="content-seperator">
@@ -277,13 +285,17 @@
             <p>
                 Help us make a <span class="white">difference</span>, you can be an active part of the <span class="white">development</span> towards <span class="white">genetic engineering</span>.Genetics is the future of upcoming generations, which will provide them an reliable technology to reduce deaths due to several <span class="white">dangerous diseases</span>. We will also be able to cure <span class="white">cancer</span> that will be incurable with te help of <span class="white">traditional methods</span>.
                 <br><br>
-                <span class="white">Why donate?</span> <br> Your <span class="white">support</span> is an investment in our shared <span class="white">future</span>. Help us sustain GSA career programs
+                <span class="white" style="font-size: 2vw;">Why consider?</span> <br> Your <span class="white">support</span> is an investment in our shared <span class="white">future</span>. Help us sustain GSA career programs
                 and conferences and develop new ways to serve our <span class="white">research community</span>.
             </p>
-            <button class="learnmore-button" onclick="window.location = 'https://genetics-gsa.org/donate/'" style="transform: scale(120%);">Donate Now</button>
+            <button class="donate_button" onclick="window.location = 'https://genetics-gsa.org/donate/'" style="transform: scale(120%);">Donate Now</button>
         </div>
         
     </div>
+    <div class="screen-container" style="padding: 35px;">
+        <iframe width="100%" height="100%" src="contact.html"></iframe> 
+    </div>
+    
     <script>
         const lineChart = document.getElementById('cost-chart');
         let lineChartCreated = false

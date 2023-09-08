@@ -25,7 +25,7 @@ body {
     scrollbar-width: none;
 }
 
-body::-webkit-scrollbar { 
+.no-scroll-body::-webkit-scrollbar { 
     display: none;
 }
 
@@ -113,8 +113,9 @@ html {
     display: none;
     position: absolute;
     width: 100%;
-    overflow: auto;
+    /* overflow: auto; */
     box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+    
 }
 
 .dropdown:hover .dropdown-content {
@@ -127,9 +128,110 @@ html {
     background-color: var(--transparent);
     padding: 5px;
     text-decoration: none;
+
+    /* text-align: center; */
+    font-size: 1vw;
+
+    height: 3vh;
 }
 
 .dropdown-content a:hover {
     color: #FFFFFF;
     background-color: #00A4BD;
+}
+
+
+
+/* Changes */
+.green-text{
+    font-size: 4vw;
+    color: #76c400;
+
+    transition: all 0.3s;
+
+}
+
+.learnmore-green-button{
+    margin-top: 10px;
+    padding: 7px 20px;
+    font-size: 1.2vw;
+    align-self: center;
+
+    background-color: #76c400;
+    color: var(--contrast);
+    border-style:solid;
+    border-color: #76c400;
+
+    border-radius: 5px;
+
+    transition: all 0.3s;
+}
+
+.learnmore-green-button:hover{
+    background-color: transparent;
+    color: #76c400;
+}
+
+#yellow-background:hover .green-text{
+    
+    color: #6db600;
+
+    visibility: hidden;
+    animation-name: scroll-text;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; 
+}
+
+#yellow-background{
+    display:flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #ffea00; 
+
+    transition: all 0.3s;
+
+}
+
+/* #yellow-background:hover{
+    background-color: #fff36ad9;
+} */
+
+#scroll-text{
+    animation-name: scroll-text;
+    animation-timing-function: ease-in-out;
+    animation-duration: 10s;
+    animation-iteration-count: infinite; 
+}
+
+
+@keyframes scroll-text{
+    0% {
+        transform: translateX(-1500px);
+        visibility: visible;
+    }
+    50% {
+        transform: translateX(0px);
+        visibility: visible;
+    }
+    100% {
+        transform: translateX(1500px);
+        visibility: visible;
+    }
+}
+
+@keyframes small-scroll-text{
+    0% {
+        transform: translateX(-750px);
+        visibility: visible;
+    }
+    50% {
+        transform: translateX(0px);
+        visibility: visible;
+    }
+
+    100% {
+        transform: translateX(750px);
+        visibility: visible;
+    }
 }

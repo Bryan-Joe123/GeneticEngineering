@@ -12,11 +12,22 @@
 
 body{
     background-color: #17171a;
-    /* background: url("../Assets/BlackBack.jpg") repeat center center;  */
+    background: url("../Assets/BlackBack.jpg") repeat center center; 
+    background-size: cover;
 
     /* padding:70px 100px 70px 30px; */
     display:flex;
     flex-direction: column;
+
+    animation-name: background-bs;
+    animation-duration: 30s;
+    animation-iteration-count: infinite; 
+}
+
+@keyframes background-bs{
+    0% {background-size: 100%;}
+    50% {background-size: 120%;}
+    100% {background-size: 100%;}
 }
 
 #screen-container{
@@ -183,3 +194,4 @@ ol{
 .images:hover{
     scale: 120%;
 }
+

@@ -11,7 +11,7 @@
     <link rel="icon" type="image/x-icon" href="/Assets/Favicon.png"> 
 
 </head>
-<body>
+<body style="scrollbar-width: 60px;">
     <div id="header-container">
         <img src="../Assets/Logo.png" alt="Logo" width="70vw" height="70vw"  onclick="window.location = './home.html'"> 
         <div id="header-button-container">
@@ -37,8 +37,8 @@
         <div class="content-seperator">
             <h1>Contact Us</h1>
             <p>
-            Well hello, this is an project created for the 2023 STAI competition.
-            Any feedback or correction to the website is highly appreciated. It would be very helpful
+            Well hello, this is an project created for the <b class="white">2023 STAI</b> competition.
+            Any feedback or correction to the website is <b class="white">highly appreciated</b>. It would be very <b class="white">helpful</b>
             if you can leave an honest review about the website and its contents. <br><br>
             This will help the website in its improvement and development which in turn will make it 
             feel more professional. And also any other relevant questions can be asked regarding this topic.
@@ -51,20 +51,37 @@
             </div>
         </div>
         <div class="content-seperator">
+
+            
+                <!-- FirstName: <input type="text" name="FirstName">
+                Email: <input type="text" name="Email">
+                <input type="submit" name="submit" value="Submit"> -->
+              
             <h1 style="color:var(--text);margin-left: 70px;font-size:2vw;">Enter Info</h1>
-            <div class="h-container">
-                <div class="v-container">
-                    <input type="text" placeholder="Enter your name" class="details-input" id="name">
-                    <input type="text" placeholder="Enter valid email id" class="details-input" id="email">
+            <form action="mailto:bryanjoeadams@gmail.com" method="post" enctype="text/plain"></form>
+                <div class="h-container">
+                    <div class="v-container">
+                        <input type="text" placeholder="Enter your name" class="details-input" id="name" autocomplete="off">
+                        <input type="text" placeholder="Enter valid email id" class="details-input" id="email" autocomplete="off">
+                    </div>
+                    <div class="v-container">
+                        <input type="text" placeholder="Enter subject" class="details-input" id="subject" autocomplete="off">
+                        <input type="text" placeholder="Enter valid phone no" class="details-input" id="phone" autocomplete="off">
+                    </div>
                 </div>
-                <div class="v-container">
-                    <input type="text" placeholder="Enter subject" class="details-input" id="subject">
-                    <input type="text" placeholder="Enter valid phone no" class="details-input" id="phone">
-                </div>
-            </div>
-            <textarea id="message" type="text" placeholder="Enter your message" class="details-input details-input-wide" rows="6" ></textarea>
-            <button id="submit-button" onclick="submit()">Submit</button>
+                <textarea id="message" type="text" placeholder="Enter your message" class="details-input-wide" rows="6" autocomplete="off"></textarea>
+                <a href="mailto: bryanjoeadams@gmail.com?subject={subject}&body={body}" id="submit-button" >Send an Email</a>
+            </form>
         </div>
+        
+    </div>
+    <div class="screen-container" id="yellow-background" style="overflow: hidden;height: 100vh;flex-direction: column;">
+
+        <div style="display: flex;flex-direction: column;align-items: center;">
+            <h1 class="green-text">Web Page</h1>
+            <h1 class="green-text" style="animation-delay:0.1s;">Show Down</h1>
+        </div>
+        <button class="learnmore-green-button" onclick="window.location = '#cover'">Learn More</button>
     </div>
 </body>
 </html>

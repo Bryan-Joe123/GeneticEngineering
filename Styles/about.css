@@ -7,6 +7,17 @@ body{
     display:flex;
     flex-direction: row;
     height: 100vh;
+    background: url("../Assets/BlackBack.jpg") repeat center center; 
+    background-size: cover;
+    animation-name: background-bs;
+    animation-duration: 30s;
+    animation-iteration-count: infinite; 
+}
+
+@keyframes background-bs{
+    0% {background-size: 100%;}
+    50% {background-size: 120%;}
+    100% {background-size: 100%;}
 }
 
 .content-seperator{
@@ -46,6 +57,8 @@ body{
     font-size: 1vw;
     font-weight: normal;
     text-align: justify;
+
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .photo{
